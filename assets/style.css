@@ -796,16 +796,16 @@ details.callout.success {
   transition: box-shadow var(--transition);
 }
 
-details.callout.success > .callout-title,
-details.callout.success > summary {
+details.callout.success>.callout-title,
+details.callout.success>summary {
   color: var(--success);
   padding: 0.75rem 1rem;
   background: rgba(16, 185, 129, 0.06);
   border-bottom: 1px solid var(--border);
 }
 
-[data-theme="dark"] details.callout.success > .callout-title,
-[data-theme="dark"] details.callout.success > summary {
+[data-theme="dark"] details.callout.success>.callout-title,
+[data-theme="dark"] details.callout.success>summary {
   background: rgba(16, 185, 129, 0.08);
 }
 
@@ -819,14 +819,14 @@ details.callout.question {
   background: var(--surface);
 }
 
-details.callout.question > summary {
+details.callout.question>summary {
   color: var(--secondary);
   padding: 0.75rem 1rem;
   background: rgba(139, 92, 246, 0.06);
   font-size: 0.95rem;
 }
 
-[data-theme="dark"] details.callout.question > summary {
+[data-theme="dark"] details.callout.question>summary {
   background: rgba(139, 92, 246, 0.08);
 }
 
@@ -909,7 +909,7 @@ details.callout.question .callout-content {
   background: var(--surface);
 }
 
-  /* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
 /* Code blocks                                                        */
 /* ------------------------------------------------------------------ */
 

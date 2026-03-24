@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  const BASE_URL = "";
+  const BASE_URL = "/study-portal";
 
   // ----------------------------------------------------------------
   // Dark mode toggle

@@ -1,0 +1,3267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron Structure — Zenith Study Portal</title>
+    <meta name="description" content="Electron Structure" />
+    <meta name="generator" content="KB Site Generator" />
+    
+    <link rel="stylesheet" href="../../assets/style.css" />
+    <!-- KaTeX for math rendering -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo">
+        <button
+          id="menu-toggle-btn"
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <a href="../../">📚 Zenith Study Portal</a>
+      </div>
+      <div class="header-controls">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search notes… (press /)"
+            autocomplete="off"
+            aria-label="Search knowledge base"
+          />
+          <div id="search-results" class="search-results" role="listbox"></div>
+        </div>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-section">
+        <h3>Navigation</h3>
+        
+        <ul class="nav-tree">
+           
+         
+        <li>
+          <span
+            class="folder-label"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+          >
+            <span class="chevron">▶</span> Chemistry Aqa Gcse
+          </span>
+          <ul class="folder-children nav-tree">
+             
+         
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1---a-simple-model-of-the-atom,-symbols,-relative-atomic-mass,-electronic-charge-and-isotopes/" >A Simple Model of the Atom, Symbols, Relative Atomic Mass, Electronic Charge and Isotopes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.3.1---addition-polymerisation/" >Addition Polymerisation</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.2.3---alcohols/" >Alcohols</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.3.2---alloys-as-useful-materials/" >Alloys as Useful Materials</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.1.4---alternative-methods-of-extracting-metals/" >Alternative Methods of Extracting Metals</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.3.3---amino-acids-and-polypeptides/" >Amino Acids and Polypeptides</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.2---amount-of-substance-and-masses/" >Amount of Substance and Masses</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.2.2---amounts-of-substances-in-equations/" >Amounts of Substances in Equations</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp8---analysis-and-purification-of-water-samples-(required-practical-8)/" >Analysis and Purification of Water Samples (Required Practical 8)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.1.1---atmospheric-composition--proportions-of-gases/" >Atmospheric Composition: Proportions of Gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.3.1---atmospheric-pollutants-from-fuels/" >Atmospheric Pollutants from Fuels</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.3.2---atom-economy/" >Atom Economy</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1---atomic-structure-and-the-periodic-table/" >Atomic Structure and the Periodic Table</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1.1---atoms,-elements,-and-compounds/" >Atoms, Elements, and Compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2---bonding,-structure,-and-the-properties-of-matter/" >Bonding, Structure, and the Properties of Matter</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.4---bulk-and-surface-properties-of-matter-(including-nanoparticles)/" >Bulk and Surface Properties of Matter (Including Nanoparticles)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.1.1---calculating-rates-of-reactions/" >Calculating Rates of Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.5---calculating-volumes-of-gases-(molar-volume)/" >Calculating Volumes of Gases (Molar Volume)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.1---carbon-compounds-as-fuels-and-feedstock/" >Carbon Compounds as Fuels and Feedstock</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.2---carbon-dioxide-and-methane-as-greenhouse-gases/" >Carbon Dioxide and Methane as Greenhouse Gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.3.3---carbonates-and-their-reaction-with-acids/" >Carbonates and their Reaction with Acids</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.2.4---carboxylic-acids/" >Carboxylic Acids</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.1.4---catalysts/" >Catalysts</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.5.2.1---cells-and-batteries/" >Cells and Batteries</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.3.3---ceramics,-polymers-and-composites/" >Ceramics, Polymers and Composites</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.1.1---chemical-bonds/" >Chemical Bonds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.1.4---chemical-measurements-and-uncertainty/" >Chemical Measurements and Uncertainty</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp7---chemical-tests-for-ions--flame-tests-&amp;-anion-identification-(halides-&amp;-sulfates)/" >Chemical Tests for Ions: Flame Tests &amp; Anion Identification (Halides &amp; Sulfates)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.1---chemical-bonds--ionic,-covalent-and-metallic/" >Chemical bonds: Ionic, Covalent and Metallic</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.1.3---chromatography/" >Chromatography</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.1.3---collision-theory-and-activation-energy/" >Collision Theory and Activation Energy</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.3---common-atmospheric-pollutants-and-their-sources/" >Common Atmospheric Pollutants and Their Sources</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.3.1---comparison-of-transition-elements-with-group-1-elements/" >Comparison of Transition Elements with Group 1 Elements</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.2.5---concentration-of-solutions/" >Concentration of Solutions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.3.2---condensation-polymerisation/" >Condensation Polymerisation</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.1.1---conservation-of-mass-and-balanced-chemical-equations/" >Conservation of Mass and Balanced Chemical Equations</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.3.1---corrosion-and-its-prevention/" >Corrosion and its Prevention</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.1.4---covalent-bonding/" >Covalent Bonding</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.1.4---cracking-and-alkenes/" >Cracking and Alkenes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.1.1---crude-oil,-hydrocarbons-and-alkanes/" >Crude oil, hydrocarbons and alkanes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.3.4---dna-and-other-naturally-occurring-polymers/" >DNA and Other Naturally Occurring Polymers</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.2.2---development-of-the-periodic-table/" >Development of the Periodic Table</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.3.1---diamond--structure-and-properties/" >Diamond: Structure and Properties</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2.7---effect-of-pressure-changes-on-equilibrium/" >Effect of Pressure Changes on Equilibrium</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.3---electrolysis/" >Electrolysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.3.4---electrolysis-of-aqueous-solutions/" >Electrolysis of Aqueous Solutions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp3---electrolysis-of-aqueous-solutions-(required-practical-3)/" >Electrolysis of Aqueous Solutions (Required Practical 3)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.3.2---electrolysis-of-molten-ionic-compounds/" >Electrolysis of Molten Ionic Compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1.7---electronic-structure/" >Electronic Structure</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2.2---energy-changes-and-reversible-reactions/" >Energy Changes and Reversible Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.5.1.1---energy-transfer-in-exothermic-and-endothermic-reactions/" >Energy Transfer in Exothermic and Endothermic Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2.3---equilibrium-in-reversible-reactions/" >Equilibrium in Reversible Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.5.1---exothermic-and-endothermic-reactions/" >Exothermic and Endothermic Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.1.3---extraction-of-metals-and-reduction/" >Extraction of Metals and Reduction</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.1.2---factors-affecting-rates-of-chemical-reactions/" >Factors Affecting Rates of Chemical Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.3.7---flame-emission-spectroscopy/" >Flame Emission Spectroscopy</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.3.1---flame-tests-for-metal-ions/" >Flame Tests for Metal Ions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.1.2---formulations/" >Formulations</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.1.2---fractional-distillation-and-petrochemicals/" >Fractional Distillation and Petrochemicals</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.5.2.2---fuel-cells/" >Fuel Cells</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.6---giant-covalent-structures/" >Giant Covalent Structures</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.2.3---global-climate-change/" >Global Climate Change</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.3.3---graphene-and-fullerenes/" >Graphene and Fullerenes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.3.2---graphite-structure-and-properties/" >Graphite Structure and Properties</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.2.1---greenhouse-gases-and-the-greenhouse-effect/" >Greenhouse Gases and the Greenhouse Effect</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.2.4---group-0--the-noble-gases/" >Group 0: The Noble Gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.2.5---group-1--the-alkali-metals/" >Group 1: The Alkali Metals</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.2.6---group-7--the-halogens/" >Group 7: The Halogens</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.3.5---half-equations-at-electrodes/" >Half Equations at Electrodes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.1.4---how-carbon-dioxide-decreased-in-earth&#39;s-atmosphere/" >How Carbon Dioxide Decreased in Earth&#39;s Atmosphere</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2---how-bonding-and-structure-are-related-to-the-properties-of-substances/" >How bonding and structure are related to the properties of substances</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.2.2---human-activities-and-greenhouse-gases/" >Human Activities and Greenhouse Gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.2---identification-of-common-gases/" >Identification of Common Gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.3.2---identifying-metal-ions-with-sodium-hydroxide/" >Identifying Metal Ions with Sodium Hydroxide</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.1.3---increase-in-oxygen-in-the-atmosphere/" >Increase in Oxygen in the Atmosphere</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.3.6---instrumental-methods-of-analysis/" >Instrumental Methods of Analysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp5---investigating-reaction-rates--concentration-effects-(rp5)/" >Investigating Reaction Rates: Concentration Effects (RP5)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp4---investigating-temperature-changes-in-reacting-solutions-(required-practical-4)/" >Investigating Temperature Changes in Reacting Solutions (Required Practical 4)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.1.3---ionic-compounds/" >Ionic Compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.1.2---ionic-bonding/" >Ionic bonding</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.11---key-ideas-in-chemistry/" >Key Ideas in Chemistry</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.2.1---life-cycle-assessment-(lca)/" >Life Cycle Assessment (LCA)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.2.4---limiting-reactants/" >Limiting Reactants</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.2---bonding,-structure,-and-the-properties-of-matter/" >MOC: Bonding, structure, and the properties of matter</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.2.4---bulk-and-surface-properties-of-matter-including-nanoparticles-(chemistry-only)/" >MOC: Bulk and surface properties of matter including nanoparticles (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.7.1---carbon-compounds-as-fuels-and-feedstock/" >MOC: Carbon compounds as fuels and feedstock</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.9.2---carbon-dioxide-and-methane-as-greenhouse-gases/" >MOC: Carbon dioxide and methane as greenhouse gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.8---chemical-analysis/" >MOC: Chemical analysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.2.1---chemical-bonds,-ionic,-covalent-and-metallic/" >MOC: Chemical bonds, ionic, covalent and metallic</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.5.2---chemical-cells-and-fuel-cells-(chemistry-only)/" >MOC: Chemical cells and fuel cells (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.4---chemical-changes/" >MOC: Chemical changes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.3.1---chemical-measurements,-conservation-of-mass-and-the-quantitative-interpretation-of-chemical-equations/" >MOC: Chemical measurements, conservation of mass and the quantitative interpretation of chemical equations</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.9---chemistry-of-the-atmosphere/" >MOC: Chemistry of the atmosphere</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.8.1.3---chromatography/" >MOC: Chromatography</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.9.3---common-atmospheric-pollutants-and-their-sources/" >MOC: Common atmospheric pollutants and their sources</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.4.3---electrolysis/" >MOC: Electrolysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.4.3.4---electrolysis-of-aqueous-solutions/" >MOC: Electrolysis of aqueous solutions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.5---energy-changes/" >MOC: Energy changes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.5.1.1---energy-transfer-during-exothermic-and-endothermic-reactions/" >MOC: Energy transfer during exothermic and endothermic reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.5.1---exothermic-and-endothermic-reactions/" >MOC: Exothermic and endothermic reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.6.1.2---factors-which-affect-the-rates-of-chemical-reactions/" >MOC: Factors which affect the rates of chemical reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.2.2---how-bonding-and-structure-are-related-to-the-properties-of-substances/" >MOC: How bonding and structure are related to the properties of substances</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.8.2---identification-of-common-gases/" >MOC: Identification of common gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.8.3---identification-of-ions-by-chemical-and-spectroscopic-means-(chemistry-only)/" >MOC: Identification of ions by chemical and spectroscopic means (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.10.2---life-cycle-assessment-and-recycling/" >MOC: Life cycle assessment and recycling</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.7---organic-chemistry/" >MOC: Organic chemistry</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.10.1.2---potable-water/" >MOC: Potable water</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.1.3---properties-of-transition-metals-(chemistry-only)/" >MOC: Properties of transition metals (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.8.1---purity,-formulations-and-chromatography/" >MOC: Purity, formulations and chromatography</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.3---quantitative-chemistry/" >MOC: Quantitative chemistry</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.6.1---rate-of-reaction/" >MOC: Rate of reaction</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.4.2---reactions-of-acids/" >MOC: Reactions of acids</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.7.2---reactions-of-alkenes-and-alcohols-(chemistry-only)/" >MOC: Reactions of alkenes and alcohols (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.4.1---reactivity-of-metals/" >MOC: Reactivity of metals</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.6.2---reversible-reactions-and-dynamic-equilibrium/" >MOC: Reversible reactions and dynamic equilibrium</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.4.2.3---soluble-salts/" >MOC: Soluble salts</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.2.3---structure-and-bonding-of-carbon/" >MOC: Structure and bonding of carbon</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4---subject-content/" >MOC: Subject content</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.8.3.5---sulfates/" >MOC: Sulfates</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.7.3---synthetic-and-naturally-occurring-polymers-(chemistry-only)/" >MOC: Synthetic and naturally occurring polymers (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.10.4---the-haber-process-and-the-use-of-npk-fertilisers-(chemistry-only)/" >MOC: The Haber process and the use of NPK fertilisers (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.9.1---the-composition-and-evolution-of-the-earth&#39;s-atmosphere/" >MOC: The composition and evolution of the Earth&#39;s atmosphere</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.6---the-rate-and-extent-of-chemical-change/" >MOC: The rate and extent of chemical change</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.4.2.5---titrations-(chemistry-only)/" >MOC: Titrations (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.3.2---use-of-amount-of-substance-in-relation-to-masses-of-pure-substances/" >MOC: Use of amount of substance in relation to masses of pure substances</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.10.3---using-materials-(chemistry-only)/" >MOC: Using materials (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.10---using-resources/" >MOC: Using resources</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.10.1---using-the-earth&#39;s-resources-and-obtaining-potable-water/" >MOC: Using the Earth&#39;s resources and obtaining potable water</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/moc--4.3.3---yield-and-atom-economy-of-chemical-reactions-(chemistry-only)/" >MOC: Yield and atom economy of chemical reactions (chemistry only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.1.3---mass-changes-in-reactions-involving-gases/" >Mass Changes in Reactions Involving Gases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.1.1---metal-oxides/" >Metal Oxides</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.1.5---metallic-bonding/" >Metallic Bonding</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.2.3---metals-and-non-metals/" >Metals and Non-metals</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.8---metals-as-conductors/" >Metals as Conductors</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1.2---mixtures-and-separation-techniques/" >Mixtures and Separation Techniques</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.2.1---moles/" >Moles</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.2.2---neutralisation-of-acids-and-salt-production/" >Neutralisation of Acids and Salt Production</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.1.4---oxidation-and-reduction-(in-terms-of-electrons)/" >Oxidation and Reduction (in terms of electrons)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp6---paper-chromatography-and-rf-values/" >Paper Chromatography and Rf Values</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.3.1---percentage-yield/" >Percentage Yield</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.5---polymers/" >Polymers</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.1.2---potable-water-production/" >Potable Water Production</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.2.3---preparation-of-soluble-salts/" >Preparation of Soluble Salts</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp1---preparation-of-a-soluble-salt-from-an-insoluble-reactant-(rp1)/" >Preparation of a Soluble Salt from an Insoluble Reactant (RP1)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.4.2---production-and-uses-of-npk-fertilisers/" >Production and Uses of NPK Fertilisers</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.3.2---properties-and-effects-of-atmospheric-pollutants/" >Properties and Effects of Atmospheric Pollutants</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.1.3---properties-of-hydrocarbons/" >Properties of Hydrocarbons</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.3---properties-of-ionic-compounds/" >Properties of Ionic Compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.7---properties-of-metals-and-alloys/" >Properties of Metals and Alloys</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.4---properties-of-small-molecules/" >Properties of Small Molecules</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.3---properties-of-transition-metals-(chemistry-only)/" >Properties of Transition Metals (Chemistry Only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.1.1---pure-substances/" >Pure Substances</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.1---purity,-formulations-and-chromatography/" >Purity, Formulations and Chromatography</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.1---rate-of-reaction/" >Rate of reaction</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.5.1.2---reaction-profiles/" >Reaction Profiles</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.2---reactions-of-acids/" >Reactions of Acids</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.2.1---reactions-of-acids-with-metals/" >Reactions of Acids with Metals</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.2.2---reactions-of-alkenes/" >Reactions of Alkenes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.2---reactions-of-alkenes-and-alcohols-(chemistry-only)/" >Reactions of Alkenes and Alcohols (Chemistry Only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1.6---relative-atomic-mass-(a_r)/" >Relative Atomic Mass (A_r)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1.4---relative-electrical-charges-of-subatomic-particles/" >Relative Electrical Charges of Subatomic Particles</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.1.2---relative-formula-mass-(mr)/" >Relative Formula Mass (Mr)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-rp2---required-practical--titration-(strong-acid-&amp;-strong-alkali)/" >Required Practical: Titration (Strong Acid &amp; Strong Alkali)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2.1---reversible-reactions/" >Reversible Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2---reversible-reactions-and-dynamic-equilibrium/" >Reversible Reactions and Dynamic Equilibrium</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1.5---size-and-mass-of-atoms/" >Size and Mass of Atoms</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.4.1---sizes-of-particles-and-their-properties/" >Sizes of particles and their properties</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.2---state-symbols-in-chemical-equations/" >State Symbols in Chemical Equations</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.2.6---strong-and-weak-acids/" >Strong and Weak Acids</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.2.1---structure-and-formulae-of-alkenes/" >Structure and Formulae of Alkenes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.3---structure-and-bonding-of-carbon/" >Structure and bonding of carbon</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.3.5---sulfates-and-their-identification/" >Sulfates and their Identification</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.7.3---synthetic-and-naturally-occurring-polymers-(chemistry-only)/" >Synthetic and Naturally Occurring Polymers (Chemistry Only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.2.3---test-for-carbon-dioxide-(limewater-test)/" >Test for Carbon Dioxide (Limewater Test)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.2.4---test-for-chlorine-gas/" >Test for Chlorine Gas</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.2.1---test-for-hydrogen/" >Test for Hydrogen</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.2.2---test-for-oxygen/" >Test for Oxygen</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.8.3.4---testing-for-halide-ions-(halides)/" >Testing for Halide Ions (Halides)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.2.4---the-carbon-footprint-and-its-reduction/" >The Carbon Footprint and its Reduction</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.1---the-composition-and-evolution-of-earth&#39;s-atmosphere/" >The Composition and Evolution of Earth&#39;s Atmosphere</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.1.3---the-development-of-the-model-of-the-atom/" >The Development of the Model of the Atom</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.9.1.2---the-earth&#39;s-early-atmosphere/" >The Earth&#39;s Early Atmosphere</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2.5---the-effect-of-changing-concentration-on-chemical-equilibrium/" >The Effect of Changing Concentration on Chemical Equilibrium</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2.4---the-effect-of-changing-conditions-on-equilibrium-(le-chatelier&#39;s-principle)/" >The Effect of Changing Conditions on Equilibrium (Le Chatelier&#39;s Principle)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.6.2.6---the-effect-of-temperature-changes-on-equilibrium/" >The Effect of Temperature Changes on Equilibrium</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.5.1.3---the-energy-change-of-reactions-(exothermic-and-endothermic)/" >The Energy Change of Reactions (Exothermic and Endothermic)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.4.1---the-haber-process/" >The Haber Process</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.2---the-periodic-table/" >The Periodic Table</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.2.1---the-periodic-table/" >The Periodic Table</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.1.2---the-reactivity-series/" >The Reactivity Series</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.2.1---the-three-states-of-matter/" >The Three States of Matter</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.2.4---the-ph-scale-and-neutralisation/" >The pH scale and Neutralisation</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.2.5---titrations-(chemistry-only)/" >Titrations (Chemistry Only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.1.3.2---typical-properties-of-transition-elements/" >Typical Properties of Transition Elements</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.2.4.2---uses-of-nanoparticles/" >Uses of Nanoparticles</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.4---using-concentrations-of-solutions-in-mol-dm³/" >Using Concentrations of Solutions in mol/dm³</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.3.3---using-electrolysis-to-extract-metals/" >Using Electrolysis to Extract Metals</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.2.3---using-moles-to-balance-equations/" >Using Moles to Balance Equations</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.1---using-the-earth&#39;s-resources-and-obtaining-potable-water/" >Using the Earth&#39;s Resources and Obtaining Potable Water</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.1.1---using-the-earth&#39;s-resources-and-sustainable-development/" >Using the Earth&#39;s Resources and Sustainable Development</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.1.3---waste-water-treatment/" >Waste Water Treatment</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.10.2.2---ways-of-reducing-the-use-of-resources/" >Ways of reducing the use of resources</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-aqa-gcse/aqa-8462-4.3.3---yield-and-atom-economy-of-chemical-reactions/" >Yield and Atom Economy of Chemical Reactions</a>
+        </li>
+           
+          </ul>
+        </li>
+          
+        <li>
+          <span
+            class="folder-label"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+          >
+            <span class="chevron">▶</span> Physics Aqa Gcse
+          </span>
+          <ul class="folder-children nav-tree">
+             
+         
+        <li>
+          <a href="../../physics-aqa-gcse/aqa-8462-4.1.1---a-simple-model-of-the-atom,-symbols,-relative-atomic-mass,-electronic-charge-and-isotopes/" >A Simple Model of the Atom, Symbols, Relative Atomic Mass, Electronic Charge and Isotopes</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/ocr-h432-4.1.2---alkanes/" >Alkanes</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/aqa-8462-4.1---atomic-structure-and-the-periodic-table/" >Atomic Structure and the Periodic Table</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/aqa-8462-4.1.1.1---atoms,-elements,-and-compounds/" >Atoms, Elements, and Compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/ocr-h432-4.1---basic-concepts-and-hydrocarbons/" >Basic Concepts and Hydrocarbons</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/ocr-h432-4.1.1---basic-concepts-of-organic-chemistry/" >Basic Concepts of Organic Chemistry</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/moc--4.1.2---conservation-and-dissipation-of-energy/" >MOC: Conservation and dissipation of energy</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/moc--4.1---energy/" >MOC: Energy</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/moc--4.1.1---energy-changes-in-a-system,-and-the-way-energy-is-stored-before-and-after-such-changes/" >MOC: Energy changes in a system, and the way energy is stored before and after such changes</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/aqa-8462-4.1.1.2---mixtures-and-separation-techniques/" >Mixtures and Separation Techniques</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/aqa-8462-4.1.1.3---the-development-of-the-model-of-the-atom/" >The Development of the Model of the Atom</a>
+        </li>
+          
+        <li>
+          <a href="../../physics-aqa-gcse/aqa-8462-4.1.2---the-periodic-table/" >The Periodic Table</a>
+        </li>
+           
+          </ul>
+        </li>
+          
+        <li>
+          <span
+            class="folder-label"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+          >
+            <span class="chevron">▶</span> Chemistry Ocr Alevel
+          </span>
+          <ul class="folder-children nav-tree">
+             
+         
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.1.4---acids-and-bases/" >Acids and Bases</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.1.3---acids,-bases,-and-buffers/" >Acids, Bases, and Buffers</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-4.2.1---alcohols/" >Alcohols</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-4.2---alcohols,-haloalkanes-and-analysis/" >Alcohols, Haloalkanes and Analysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-4.1.3---alkenes/" >Alkenes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.2.1---amines/" >Amines</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.2.2---amino-acids,-amides-and-chirality/" >Amino acids, amides and chirality</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.1.3---amount-of-substance/" >Amount of Substance</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-4.2.4---analytical-techniques--infrared-spectroscopy-and-mass-spectrometry/" >Analytical techniques: Infrared Spectroscopy and Mass Spectrometry</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.1.1---aromatic-compounds/" >Aromatic Compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.1---aromatic-compounds,-carbonyls-and-acids/" >Aromatic compounds, carbonyls and acids</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.1.1---atomic-structure-and-isotopes/" >Atomic Structure and Isotopes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.1---atoms-and-reactions/" >Atoms and Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.2.2---bonding-and-structure/" >Bonding and Structure</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/aqa-8462-4.2---bonding,-structure,-and-the-properties-of-matter/" >Bonding, Structure, and the Properties of Matter</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/aqa-8462-4.2.4---bulk-and-surface-properties-of-matter-(including-nanoparticles)/" >Bulk and Surface Properties of Matter (Including Nanoparticles)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.1.2---carbonyl-compounds--aldehydes-and-ketones/" >Carbonyl compounds: Aldehydes and Ketones</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.2.4---carbon–carbon-bond-formation/" >Carbon–carbon bond formation</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.1.3---carboxylic-acids-and-esters/" >Carboxylic acids and esters</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.2.3---chemical-equilibrium/" >Chemical Equilibrium</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/aqa-8462-4.2.1---chemical-bonds--ionic,-covalent-and-metallic/" >Chemical bonds: Ionic, Covalent and Metallic</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.3.1---chromatography-and-qualitative-analysis/" >Chromatography and Qualitative Analysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.1.2---compounds,-formulae,-and-equations/" >Compounds, Formulae, and Equations</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.2.1---electron-structure/" class="active">Electron Structure</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.2---electrons,-bonding-and-structure/" >Electrons, Bonding and Structure</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.2---energy-changes-in-ionic-bonding,-feasibility-of-reactions,-and-electrochemistry/" >Energy Changes in Ionic Bonding, Feasibility of Reactions, and Electrochemistry</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.2.1---enthalpy-changes/" >Enthalpy Changes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.2.2---enthalpy-and-entropy/" >Enthalpy and Entropy</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-4.2.2.e---environmental-concerns-from-use-of-organohalogen-compounds/" >Environmental concerns from use of organohalogen compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.1.4---evaluation-of-experimental-results/" >Evaluation of Experimental Results</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.1.2---group-2-elements--trends-and-reactions/" >Group 2 Elements: Trends and Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-4.2.2---haloalkanes/" >Haloalkanes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/aqa-8462-4.2.2---how-bonding-and-structure-are-related-to-the-properties-of-substances/" >How bonding and structure are related to the properties of substances</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.1.1---how-fast----rates-of-reaction/" >How fast? - Rates of Reaction</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.1.2---implementing-practical-skills-in-chemistry/" >Implementing Practical Skills in Chemistry</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.2.1---lattice-enthalpy,-enthalpy-of-solution-and-hydration/" >Lattice Enthalpy, Enthalpy of Solution and Hydration</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--4.2.1---alcohols/" >MOC: Alcohols</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--4.2---alcohols,-haloalkanes-and-analysis/" >MOC: Alcohols, haloalkanes and analysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--4.1.3---alkenes/" >MOC: Alkenes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--6.3---analysis/" >MOC: Analysis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--4.2.4---analytical-techniques/" >MOC: Analytical techniques</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--6.1.1---aromatic-compounds/" >MOC: Aromatic compounds</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--6.1---aromatic-compounds,-carbonyls-and-acids/" >MOC: Aromatic compounds, carbonyls and acids</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--2.1---atoms-and-reactions/" >MOC: Atoms and reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--2.2.2---bonding-and-structure/" >MOC: Bonding and structure</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--6.1.3---carboxylic-acids-and-esters/" >MOC: Carboxylic acids and esters</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--2.2---electrons,-bonding-and-structure/" >MOC: Electrons, bonding and structure</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--5.2---energy/" >MOC: Energy</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--4.2.2---haloalkanes/" >MOC: Haloalkanes</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--6.2---nitrogen-compounds,-polymers-and-synthesis/" >MOC: Nitrogen compounds, polymers and synthesis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--4.2.3---organic-synthesis/" >MOC: Organic synthesis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--3.2---physical-chemistry/" >MOC: Physical chemistry</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--1.1---practical-skills-assessed-in-a-written-examination/" >MOC: Practical skills assessed in a written examination</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--1.2---practical-skills-assessed-in-the-practical-endorsement/" >MOC: Practical skills assessed in the practical endorsement</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--5.1---rates,-equilibrium-and-ph/" >MOC: Rates, equilibrium and pH</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--5.2.3---redox-and-electrode-potentials/" >MOC: Redox and electrode potentials</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--6.3.2---spectroscopy/" >MOC: Spectroscopy</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--3.1---the-periodic-table/" >MOC: The periodic table</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--5.3---transition-elements/" >MOC: Transition elements</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/moc--5.3.1---transition-elements/" >MOC: Transition elements</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.2---nitrogen-compounds,-polymers-and-synthesis/" >Nitrogen compounds, polymers and synthesis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-4.2.3---organic-synthesis/" >Organic Synthesis</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.2.5---organic-synthesis--preparation-and-purification/" >Organic Synthesis: Preparation and Purification</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.1.1---periodicity/" >Periodicity</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.2---physical-chemistry--energy,-rates,-and-equilibria/" >Physical Chemistry: Energy, Rates, and Equilibria</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.1.1---planning-experiments/" >Planning Experiments</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-6.2.3---polyesters-and-polyamides/" >Polyesters and Polyamides</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.2.1---practical-skills/" >Practical Skills</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.2---practical-skills-assessed-in-the-practical-endorsement/" >Practical Skills Assessed in the Practical Endorsement</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.1---practical-skills-assessed-in-a-written-examination/" >Practical skills assessed in a written examination</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.3.1.j---precipitation-reactions-and-complex-formation-of-transition-metal-ions/" >Precipitation Reactions and Complex Formation of Transition Metal Ions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.1.3---processing,-analysis-and-interpretation-of-experimental-results/" >Processing, Analysis and Interpretation of Experimental Results</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/aqa-8462-4.1.3---properties-of-transition-metals-(chemistry-only)/" >Properties of Transition Metals (Chemistry Only)</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.1.4---qualitative-analysis-of-ions/" >Qualitative Analysis of Ions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.3.2---qualitative-analysis-of-ions/" >Qualitative Analysis of Ions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.2.2---reaction-rates/" >Reaction Rates</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-2.1.5---redox-reactions-and-oxidation-numbers/" >Redox Reactions and Oxidation Numbers</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.2.3---redox-and-electrode-potentials/" >Redox and Electrode Potentials</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/aqa-8462-4.2.3---structure-and-bonding-of-carbon/" >Structure and bonding of carbon</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.1.3---the-halogens/" >The Halogens</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-3.1---the-periodic-table/" >The Periodic Table</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.3---transition-elements/" >Transition Elements</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-5.3.1---transition-elements/" >Transition Elements</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-alevel/ocr-h432-1.2.2---use-of-apparatus-and-techniques/" >Use of Apparatus and Techniques</a>
+        </li>
+           
+          </ul>
+        </li>
+          
+        <li>
+          <span
+            class="folder-label"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+          >
+            <span class="chevron">▶</span> Chemistry Ocr Gcse
+          </span>
+          <ul class="folder-children nav-tree">
+             
+         
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-6.1.3.e-f---acyl-chlorides--formation-and-reactions/" >Acyl Chlorides: Formation and Reactions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-2.2.2.i-j---electronegativity-and-bond-polarity/" >Electronegativity and Bond Polarity</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-2.2.2.k-o---intermolecular-forces/" >Intermolecular Forces</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-5.3.1.h-i---ligand-substitution-reactions-and-haemoglobin/" >Ligand Substitution Reactions and Haemoglobin</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-5.3.1.d-g---ligands-and-complex-ions/" >Ligands and Complex Ions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-6.1.1.h-l---phenols--acidity-and-electrophilic-substitution/" >Phenols: Acidity and Electrophilic Substitution</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-5.3.1.k-l---redox-reactions-of-transition-metal-ions/" >Redox Reactions of Transition Metal Ions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-5.2.3.j-k---storage-and-fuel-cells/" >Storage and Fuel Cells</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-2.2.2.g-h---the-shapes-of-simple-molecules-and-ions/" >The shapes of simple molecules and ions</a>
+        </li>
+          
+        <li>
+          <a href="../../chemistry-ocr-gcse/ocr-h432-4.1.3.k-l---waste-polymers-and-alternatives/" >Waste polymers and alternatives</a>
+        </li>
+           
+          </ul>
+        </li>
+           
+        </ul>
+      </div>
+
+      
+      <div class="sidebar-section">
+        <h3>Tags</h3>
+        <div class="tag-cloud">
+          
+          <a
+            href="../../tags/a-level.html"
+            class="tag-pill"
+          >
+            a-level<span class="tag-count">60</span>
+          </a>
+          
+          <a
+            href="../../tags/a-simple-model-of-the-atom,-symbols,-rel.html"
+            class="tag-pill"
+          >
+            a-simple-model-of-the-atom,-symbols,-rel<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/alcohols.html"
+            class="tag-pill"
+          >
+            alcohols<span class="tag-count">5</span>
+          </a>
+          
+          <a
+            href="../../tags/alcohols,-haloalkanes-and-analysis.html"
+            class="tag-pill"
+          >
+            alcohols,-haloalkanes-and-analysis<span class="tag-count">8</span>
+          </a>
+          
+          <a
+            href="../../tags/alkenes.html"
+            class="tag-pill"
+          >
+            alkenes<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/analysis.html"
+            class="tag-pill"
+          >
+            analysis<span class="tag-count">1</span>
+          </a>
+          
+          <a
+            href="../../tags/analytical-techniques.html"
+            class="tag-pill"
+          >
+            analytical-techniques<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/aqa.html"
+            class="tag-pill"
+          >
+            aqa<span class="tag-count">169</span>
+          </a>
+          
+          <a
+            href="../../tags/aromatic-compounds,-carbonyls-and-acids.html"
+            class="tag-pill"
+          >
+            aromatic-compounds,-carbonyls-and-acids<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/atomic-structure-and-the-periodic-table.html"
+            class="tag-pill"
+          >
+            atomic-structure-and-the-periodic-table<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/atoms-and-reactions.html"
+            class="tag-pill"
+          >
+            atoms-and-reactions<span class="tag-count">5</span>
+          </a>
+          
+          <a
+            href="../../tags/bonding,-structure,-and-the-properties-o.html"
+            class="tag-pill"
+          >
+            bonding,-structure,-and-the-properties-o<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/carbon-compounds-as-fuels-and-feedstock.html"
+            class="tag-pill"
+          >
+            carbon-compounds-as-fuels-and-feedstock<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/carbon-dioxide-and-methane-as-greenhouse.html"
+            class="tag-pill"
+          >
+            carbon-dioxide-and-methane-as-greenhouse<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/chemical-analysis.html"
+            class="tag-pill"
+          >
+            chemical-analysis<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/chemical-cells-and-fuel-cells-(chemistry.html"
+            class="tag-pill"
+          >
+            chemical-cells-and-fuel-cells-(chemistry<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/chemical-changes.html"
+            class="tag-pill"
+          >
+            chemical-changes<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/chemical-measurements,-conservation-of-m.html"
+            class="tag-pill"
+          >
+            chemical-measurements,-conservation-of-m<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/chemistry.html"
+            class="tag-pill"
+          >
+            chemistry<span class="tag-count">306</span>
+          </a>
+          
+          <a
+            href="../../tags/chemistry-of-the-atmosphere.html"
+            class="tag-pill"
+          >
+            chemistry-of-the-atmosphere<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/common-atmospheric-pollutants-and-their-.html"
+            class="tag-pill"
+          >
+            common-atmospheric-pollutants-and-their-<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/conservation-and-dissipation-of-energy.html"
+            class="tag-pill"
+          >
+            conservation-and-dissipation-of-energy<span class="tag-count">6</span>
+          </a>
+          
+          <a
+            href="../../tags/electrolysis.html"
+            class="tag-pill"
+          >
+            electrolysis<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/electrons,-bonding-and-structure.html"
+            class="tag-pill"
+          >
+            electrons,-bonding-and-structure<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/energy.html"
+            class="tag-pill"
+          >
+            energy<span class="tag-count">10</span>
+          </a>
+          
+          <a
+            href="../../tags/energy-changes.html"
+            class="tag-pill"
+          >
+            energy-changes<span class="tag-count">1</span>
+          </a>
+          
+          <a
+            href="../../tags/energy-changes-in-a-system,-and-the-way-.html"
+            class="tag-pill"
+          >
+            energy-changes-in-a-system,-and-the-way-<span class="tag-count">7</span>
+          </a>
+          
+          <a
+            href="../../tags/exothermic-and-endothermic-reactions.html"
+            class="tag-pill"
+          >
+            exothermic-and-endothermic-reactions<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/foundation.html"
+            class="tag-pill"
+          >
+            foundation<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/gcse.html"
+            class="tag-pill"
+          >
+            gcse<span class="tag-count">176</span>
+          </a>
+          
+          <a
+            href="../../tags/haloalkanes.html"
+            class="tag-pill"
+          >
+            haloalkanes<span class="tag-count">9</span>
+          </a>
+          
+          <a
+            href="../../tags/higher.html"
+            class="tag-pill"
+          >
+            higher<span class="tag-count">94</span>
+          </a>
+          
+          <a
+            href="../../tags/identification-of-common-gases.html"
+            class="tag-pill"
+          >
+            identification-of-common-gases<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/identification-of-ions-by-chemical-and-s.html"
+            class="tag-pill"
+          >
+            identification-of-ions-by-chemical-and-s<span class="tag-count">7</span>
+          </a>
+          
+          <a
+            href="../../tags/life-cycle-assessment-and-recycling.html"
+            class="tag-pill"
+          >
+            life-cycle-assessment-and-recycling<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/moc.html"
+            class="tag-pill"
+          >
+            moc<span class="tag-count">73</span>
+          </a>
+          
+          <a
+            href="../../tags/nitrogen-compounds,-polymers-and-synthesis.html"
+            class="tag-pill"
+          >
+            nitrogen-compounds,-polymers-and-synthesis<span class="tag-count">5</span>
+          </a>
+          
+          <a
+            href="../../tags/ocr.html"
+            class="tag-pill"
+          >
+            ocr<span class="tag-count">67</span>
+          </a>
+          
+          <a
+            href="../../tags/organic-chemistry.html"
+            class="tag-pill"
+          >
+            organic-chemistry<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/organic-synthesis.html"
+            class="tag-pill"
+          >
+            organic-synthesis<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/paper-1.html"
+            class="tag-pill"
+          >
+            paper-1<span class="tag-count">107</span>
+          </a>
+          
+          <a
+            href="../../tags/paper-2.html"
+            class="tag-pill"
+          >
+            paper-2<span class="tag-count">93</span>
+          </a>
+          
+          <a
+            href="../../tags/paper-both.html"
+            class="tag-pill"
+          >
+            paper-both<span class="tag-count">18</span>
+          </a>
+          
+          <a
+            href="../../tags/physical-chemistry.html"
+            class="tag-pill"
+          >
+            physical-chemistry<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/physics.html"
+            class="tag-pill"
+          >
+            physics<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/practical-skills-assessed-in-a-written-e.html"
+            class="tag-pill"
+          >
+            practical-skills-assessed-in-a-written-e<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/practical-skills-assessed-in-the-practic.html"
+            class="tag-pill"
+          >
+            practical-skills-assessed-in-the-practic<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/purity,-formulations-and-chromatography.html"
+            class="tag-pill"
+          >
+            purity,-formulations-and-chromatography<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/quantitative-chemistry.html"
+            class="tag-pill"
+          >
+            quantitative-chemistry<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/rate-of-reaction.html"
+            class="tag-pill"
+          >
+            rate-of-reaction<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/rates,-equilibrium-and-ph.html"
+            class="tag-pill"
+          >
+            rates,-equilibrium-and-ph<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/reactions-of-acids.html"
+            class="tag-pill"
+          >
+            reactions-of-acids<span class="tag-count">6</span>
+          </a>
+          
+          <a
+            href="../../tags/reactions-of-alkenes-and-alcohols-(chemi.html"
+            class="tag-pill"
+          >
+            reactions-of-alkenes-and-alcohols-(chemi<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/reactivity-of-metals.html"
+            class="tag-pill"
+          >
+            reactivity-of-metals<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/reversible-reactions-and-dynamic-equilibrium.html"
+            class="tag-pill"
+          >
+            reversible-reactions-and-dynamic-equilibrium<span class="tag-count">7</span>
+          </a>
+          
+          <a
+            href="../../tags/standard.html"
+            class="tag-pill"
+          >
+            standard<span class="tag-count">140</span>
+          </a>
+          
+          <a
+            href="../../tags/subject-content.html"
+            class="tag-pill"
+          >
+            subject-content<span class="tag-count">5</span>
+          </a>
+          
+          <a
+            href="../../tags/synthetic-and-naturally-occurring-polyme.html"
+            class="tag-pill"
+          >
+            synthetic-and-naturally-occurring-polyme<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/the-composition-and-evolution-of-the-ear.html"
+            class="tag-pill"
+          >
+            the-composition-and-evolution-of-the-ear<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/the-haber-process-and-the-use-of-npk-fer.html"
+            class="tag-pill"
+          >
+            the-haber-process-and-the-use-of-npk-fer<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/the-periodic-table.html"
+            class="tag-pill"
+          >
+            the-periodic-table<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/the-rate-and-extent-of-chemical-change.html"
+            class="tag-pill"
+          >
+            the-rate-and-extent-of-chemical-change<span class="tag-count">2</span>
+          </a>
+          
+          <a
+            href="../../tags/transition-elements.html"
+            class="tag-pill"
+          >
+            transition-elements<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/use-of-amount-of-substance-in-relation-t.html"
+            class="tag-pill"
+          >
+            use-of-amount-of-substance-in-relation-t<span class="tag-count">5</span>
+          </a>
+          
+          <a
+            href="../../tags/using-materials-(chemistry-only).html"
+            class="tag-pill"
+          >
+            using-materials-(chemistry-only)<span class="tag-count">3</span>
+          </a>
+          
+          <a
+            href="../../tags/using-resources.html"
+            class="tag-pill"
+          >
+            using-resources<span class="tag-count">1</span>
+          </a>
+          
+          <a
+            href="../../tags/using-the-earth&#39;s-resources-and-obtainin.html"
+            class="tag-pill"
+          >
+            using-the-earth&#39;s-resources-and-obtainin<span class="tag-count">4</span>
+          </a>
+          
+          <a
+            href="../../tags/yield-and-atom-economy-of-chemical-react.html"
+            class="tag-pill"
+          >
+            yield-and-atom-economy-of-chemical-react<span class="tag-count">2</span>
+          </a>
+          
+        </div>
+      </div>
+      
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../../">Home</a>
+         
+        <span class="sep">/</span>
+        
+        <span>Chemistry Ocr Alevel</span>
+         
+        <span class="sep">/</span>
+        
+        <span>Electron Structure</span>
+         
+      </div>
+
+      <!-- Note Header -->
+      <div class="note-header">
+        <h1>Electron Structure</h1>
+        <div class="note-meta">
+          <span class="status-badge generated">generated</span>
+          <span>10320 words</span>
+           
+          <a
+            href="../../tags/chemistry.html"
+            class="tag-pill"
+            >chemistry</a
+          >
+          
+          <a
+            href="../../tags/ocr.html"
+            class="tag-pill"
+            >ocr</a
+          >
+          
+          <a
+            href="../../tags/a-level.html"
+            class="tag-pill"
+            >a-level</a
+          >
+          
+          <a
+            href="../../tags/standard.html"
+            class="tag-pill"
+            >standard</a
+          >
+          
+          <a
+            href="../../tags/paper-both.html"
+            class="tag-pill"
+            >paper-both</a
+          >
+          
+          <a
+            href="../../tags/electrons,-bonding-and-structure.html"
+            class="tag-pill"
+            >electrons,-bonding-and-structure</a
+          >
+           
+        </div>
+      </div>
+
+      <!-- Note Body -->
+      <article class="prose"><h1 id="electron-structure">Electron Structure</h1>
+<p><a href="/study-portal/chemistry-ocr-alevel/moc--2.2---electrons,-bonding-and-structure/" class="wikilink">← Back to Electrons, bonding and structure</a></p>
+<details class="callout shadow-sm mb-4 abstract" open>
+  <summary class="callout-title"><b>📖 Overview</b></summary>
+  <div class="callout-content"><p>Uncover the invisible architecture of atoms and understand how electrons dictate every chemical interaction!</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Level</strong></td>
+<td style="text-align: left;">Standard</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Study Time</strong></td>
+<td style="text-align: left;">⏱️ 75 min</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Paper</strong></td>
+<td style="text-align: left;">both</td>
+</tr>
+</tbody>
+</table></div>
+</details>
+
+<details class="callout shadow-sm mb-4 tldr" open>
+  <summary class="callout-title"><b>🤜 In a Nutshell</b></summary>
+  <div class="callout-content"><p>Electron structure describes how electrons are arranged in shells, subshells, and orbitals around an atom's nucleus, following rules like Aufbau, Pauli, and Hund's. This fundamental arrangement dictates an element's chemical properties and its position in the periodic table, providing the basis for understanding all chemical reactivity and bonding.</p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 example">
+  <summary class="callout-title"><b>📋 Specification Coverage</b></summary>
+  <div class="callout-content"><p><strong>2.2</strong> — <em>Electrons, bonding and structure</em></p>
+<ul>
+<li><code>2.2.1</code>  Electron structure</li>
+</ul></div>
+</details>
+
+<details class="callout shadow-sm mb-4 info">
+  <summary class="callout-title"><b>⏱️ Section Time Guide *(75 min total)*</b></summary>
+  <div class="callout-content"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Section</th>
+<th style="text-align: left;">Est. Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">🧠 Concepts &amp; Theory</td>
+<td style="text-align: left;">~15 min</td>
+</tr>
+<tr>
+<td style="text-align: left;">📖 Definitions &amp; Glossary</td>
+<td style="text-align: left;">~8 min</td>
+</tr>
+<tr>
+<td style="text-align: left;">📝 Worked Examples</td>
+<td style="text-align: left;">~12 min</td>
+</tr>
+<tr>
+<td style="text-align: left;">🎯 Exam Strategy</td>
+<td style="text-align: left;">~8 min</td>
+</tr>
+<tr>
+<td style="text-align: left;">❓ Exam Questions</td>
+<td style="text-align: left;">~19 min</td>
+</tr>
+<tr>
+<td style="text-align: left;">🧩 Quiz &amp; Flashcards</td>
+<td style="text-align: left;">~8 min</td>
+</tr>
+<tr>
+<td style="text-align: left;">🔍 Deep Dive &amp; Extension</td>
+<td style="text-align: left;">~8 min</td>
+</tr>
+</tbody>
+</table></div>
+</details>
+
+<hr />
+<h2 id="conceptual-understanding">🧠 Conceptual Understanding</h2>
+<p>Imagine an atom as a tiny, bustling city. At its heart is the nucleus, the bustling city centre. The electrons are like residents, but they don't just wander randomly; they live in specific 'neighbourhoods' called electron shells, which are further divided into 'streets' called subshells (s, p, d, f), and even smaller 'houses' called orbitals. Understanding electron structure means knowing exactly where these electrons reside and how they are arranged. This arrangement is crucial because it dictates an atom's reactivity, its bonding behaviour, and ultimately, the properties of the elements and the compounds they form. It's the foundational concept for explaining the entire periodic table and all of chemistry!</p>
+<h2 id="core-theory">📌 Core Theory</h2>
+<ul>
+<li>Electrons exist in distinct energy levels called electron shells, numbered n=1, 2, 3, 4...</li>
+<li>Each electron shell is composed of one or more subshells: s, p, d, and f.</li>
+<li>Subshells contain orbitals, which are regions of space where there is a high probability of finding an electron.</li>
+<li>An s-subshell contains 1 s-orbital (spherical shape), holding a maximum of 2 electrons.</li>
+<li>A p-subshell contains 3 p-orbitals (dumbbell shape), holding a maximum of 6 electrons.</li>
+<li>A d-subshell contains 5 d-orbitals, holding a maximum of 10 electrons.</li>
+<li>An f-subshell contains 7 f-orbitals, holding a maximum of 14 electrons.</li>
+<li>Each orbital can hold a maximum of two electrons, provided they have opposite spins (Pauli Exclusion Principle).</li>
+<li>Electrons fill orbitals starting from the lowest energy level (Aufbau Principle).</li>
+<li>Within a subshell, orbitals of the same energy are filled singly before any orbital is filled with a second electron (Hund's Rule of Maximum Multiplicity).</li>
+<li>The order of filling orbitals generally follows 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p...</li>
+<li>For transition metals, the 4s orbital fills before the 3d, but electrons are removed from 4s before 3d when forming positive ions.</li>
+<li>Electron configurations can be written using spectroscopic notation (e.g., 1s²2s²2p⁶) or orbital box diagrams.</li>
+</ul>
+<h2 id="detailed-explanation">🔬 Detailed Explanation</h2>
+<p>The electron structure of an atom refers to the arrangement of electrons in shells, subshells, and orbitals around the nucleus. Each shell (principal quantum number, n) can hold a maximum of 2n² electrons. Within these shells, electrons occupy subshells, which correspond to different types of orbitals (s, p, d, f) with distinct shapes and energy levels. The s-orbitals are spherical, while p-orbitals have a dumbbell shape oriented along the x, y, and z axes, making them degenerate (of equal energy) within the same subshell. The filling of these orbitals follows three key rules: the Aufbau principle states that electrons fill the lowest energy orbitals first; the Pauli exclusion principle dictates that an orbital can hold a maximum of two electrons, which must have opposite spins; and Hund's rule specifies that within a subshell of degenerate orbitals, electrons will occupy each orbital singly with parallel spins before any pairing occurs. For elements beyond Argon, the 4s orbital has a lower energy than the 3d orbital and fills first. However, when transition metals form ions, the 4s electrons are typically removed before the 3d electrons, as the 4s orbital becomes higher in energy once electrons are removed. Understanding these rules allows us to deduce the electron configuration for any atom or ion up to atomic number 36, which is fundamental to predicting their chemical behaviour.</p>
+<hr />
+<h2 id="key-definitions">📖 Key Definitions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Term</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Electron Shell</strong></td>
+<td style="text-align: left;">A principal energy level surrounding the nucleus where electrons are found, denoted by a principal quantum number (n = 1, 2, 3...). Each shell can hold a maximum of 2n² electrons.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Subshell</strong></td>
+<td style="text-align: left;">A subdivision within an electron shell, characterised by a specific type of orbital (s, p, d, f) and energy level. Each subshell consists of one or more orbitals.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Atomic Orbital</strong></td>
+<td style="text-align: left;">A region within an atom where there is a high probability (typically &gt;90%) of finding an electron. Each orbital can accommodate up to two electrons with opposite spins.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Aufbau Principle</strong></td>
+<td style="text-align: left;">A rule stating that electrons fill atomic orbitals of the lowest energy first before occupying higher energy orbitals.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pauli Exclusion Principle</strong></td>
+<td style="text-align: left;">A rule stating that no two electrons in an atom can have the same set of four quantum numbers. This means that an atomic orbital can hold a maximum of two electrons, and these electrons must have opposite spins.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hund's Rule of Maximum Multiplicity</strong></td>
+<td style="text-align: left;">A rule stating that for a given electron configuration, the term with the maximum multiplicity has the lowest energy. In practical terms, electrons will occupy degenerate orbitals singly with parallel spins before any pairing of electrons occurs in the orbitals.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Electron Configuration</strong></td>
+<td style="text-align: left;">The distribution of electrons of an atom or molecule (or other physical structure) in atomic or molecular orbitals.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="glossary">📚 Glossary</h3>
+<ul>
+<li><strong>Atomic Orbital</strong> — A region within an atom where there is a high probability (typically &gt;90%) of finding an electron. Each orbital can accommodate up to two electrons with opposite spins.</li>
+<li><strong>Aufbau Principle</strong> — A rule stating that electrons fill atomic orbitals of the lowest energy first before occupying higher energy orbitals.</li>
+<li><strong>Electron Configuration</strong> — The distribution of electrons of an atom or molecule (or other physical structure) in atomic or molecular orbitals.</li>
+<li><strong>Electron Shell</strong> — A principal energy level surrounding the nucleus where electrons are found, denoted by a principal quantum number (n = 1, 2, 3...). Each shell can hold a maximum of 2n² electrons.</li>
+<li><strong>Hund's Rule of Maximum Multiplicity</strong> — A rule stating that for a given electron configuration, the term with the maximum multiplicity has the lowest energy. In practical terms, electrons will occupy degenerate orbitals singly with parallel spins before any pairing of electrons occurs in the orbitals.</li>
+<li><strong>Pauli Exclusion Principle</strong> — A rule stating that no two electrons in an atom can have the same set of four quantum numbers. This means that an atomic orbital can hold a maximum of two electrons, and these electrons must have opposite spins.</li>
+<li><strong>Subshell</strong> — A subdivision within an electron shell, characterised by a specific type of orbital (s, p, d, f) and energy level. Each subshell consists of one or more orbitals.</li>
+</ul>
+<hr />
+<h2 id="worked-examples">📝 Worked Examples</h2>
+<h3 id="1-writing-the-electron-configuration-of-an-atom">1. Writing the Electron Configuration of an Atom</h3>
+<blockquote>
+<p><strong>Problem:</strong> Write the full electron configuration for a neutral sulfur atom (S).</p>
+</blockquote>
+<p><strong>Steps:</strong>
+1. Determine the atomic number of sulfur, Z=16, meaning it has 16 electrons.
+2. Follow the Aufbau principle, filling orbitals in order of increasing energy: 1s, 2s, 2p, 3s, 3p, 4s, 3d...
+3. Fill the 1s orbital with 2 electrons: 1s² (16-2 = 14 electrons remaining).
+4. Fill the 2s orbital with 2 electrons: 2s² (14-2 = 12 electrons remaining).
+5. Fill the 2p orbital with 6 electrons: 2p⁶ (12-6 = 6 electrons remaining).
+6. Fill the 3s orbital with 2 electrons: 3s² (6-2 = 4 electrons remaining).
+7. Place the remaining 4 electrons into the 3p subshell: 3p⁴.
+8. Combine all filled orbitals to get the full configuration.</p>
+<blockquote>
+<p><strong>Answer:</strong> 1s²2s²2p⁶3s²3p⁴</p>
+</blockquote>
+<div class="callout shadow-sm mb-4 tip">
+  <div class="callout-title"><b>Teacher's Tip</b></div>
+  <div class="callout-content"><p>Always remember the maximum number of electrons for each orbital type: s=2, p=6, d=10, f=14. Keep track of remaining electrons.</p></div>
+</div>
+
+<h3 id="2-writing-the-electron-configuration-of-an-ion">2. Writing the Electron Configuration of an Ion</h3>
+<blockquote>
+<p><strong>Problem:</strong> Write the electron configuration for the iron(II) ion, Fe²⁺.</p>
+</blockquote>
+<p><strong>Steps:</strong>
+1. Determine the atomic number of iron, Z=26, meaning a neutral iron atom has 26 electrons.
+2. Write the electron configuration for a neutral iron atom using the Aufbau principle: 1s²2s²2p⁶3s²3p⁶4s²3d⁶.
+3. Remember that when transition metals form positive ions, electrons are removed from the highest principal energy level first. In this case, the 4s orbital is in the 4th shell, while the 3d is in the 3rd shell.
+4. To form Fe²⁺, remove 2 electrons. These will be removed from the 4s orbital.
+5. Remove both electrons from the 4s orbital, leaving it empty.</p>
+<blockquote>
+<p><strong>Answer:</strong> 1s²2s²2p⁶3s²3p⁶3d⁶ (or [Ar]3d⁶)</p>
+</blockquote>
+<div class="callout shadow-sm mb-4 tip">
+  <div class="callout-title"><b>Teacher's Tip</b></div>
+  <div class="callout-content"><p>For transition metal ions, always write the neutral atom's configuration first, then remove electrons from the highest 'n' shell first, even if it wasn't the last to fill (e.g., 4s before 3d).</p></div>
+</div>
+
+<h3 id="3-applying-hunds-rule-and-pauli-principle-with-an-orbital-box-diagram">3. Applying Hund's Rule and Pauli Principle with an Orbital Box Diagram</h3>
+<blockquote>
+<p><strong>Problem:</strong> Draw the orbital box diagram for a neutral nitrogen atom (N).</p>
+</blockquote>
+<p><strong>Steps:</strong>
+1. Determine the atomic number of nitrogen, Z=7, so it has 7 electrons.
+2. Draw boxes for each orbital, grouping them by subshell and energy level: 1s, 2s, 2p.
+3. Fill the 1s orbital with two electrons, one up arrow and one down arrow (opposite spins).
+4. Fill the 2s orbital with two electrons, one up arrow and one down arrow.
+5. The 2p subshell has three degenerate orbitals. Nitrogen has 3 electrons left to place in 2p.
+6. According to Hund's Rule, place one electron in each of the three 2p orbitals, all with parallel spins (e.g., all up arrows), before pairing any.</p>
+<blockquote>
+<p><strong>Answer:</strong> <code>1s   2s      2p -----  -----  --- --- ---  ↑↓    ↑↓    ↑   ↑   ↑</code></p>
+</blockquote>
+<div class="callout shadow-sm mb-4 tip">
+  <div class="callout-title"><b>Teacher's Tip</b></div>
+  <div class="callout-content"><p>Ensure all arrows in degenerate orbitals (like 2p) are pointing in the same direction when filled singly, and then pair them with opposite spins if more electrons are added.</p></div>
+</div>
+
+<hr />
+<h2 id="required-diagrams">🎨 Required Diagrams</h2>
+<div class="callout shadow-sm mb-4 warning">
+  <div class="callout-title"><b>You must be able to draw or recognise these diagrams:</b></div>
+  <div class="callout-content"><ul>
+<li>✏️ Spherical shape of an s-orbital</li>
+<li>✏️ Dumbbell shape of p-orbitals (px, py, pz)</li>
+<li>✏️ Orbital energy level diagram showing the order of filling (e.g., 1s &lt; 2s &lt; 2p &lt; 3s &lt; 3p &lt; 4s &lt; 3d)</li>
+<li>✏️ Orbital box diagrams representing electron configurations with arrows for spin.</li>
+</ul></div>
+</div>
+
+<hr />
+<h2 id="real-world-applications">🌍 Real World Applications</h2>
+<ul>
+<li><strong>Spectroscopy:</strong> Understanding electron transitions between energy levels (shells/orbitals) is the basis for techniques like atomic emission/absorption spectroscopy, used in chemical analysis, astronomical observations, and determining elemental composition.</li>
+<li><strong>Magnetic Resonance Imaging (MRI):</strong> The spin of electrons and nuclei, a direct consequence of quantum mechanics and electron structure, is exploited in MRI scans to produce detailed images of internal body structures.</li>
+<li><strong>Material Science and Engineering:</strong> The electron configurations of atoms dictate their bonding properties, which in turn determine the physical and chemical properties of materials (e.g., conductivity of metals, semiconducting properties, strength of alloys).</li>
+<li><strong>Catalysis:</strong> Catalysts, particularly transition metals, often rely on their partially filled d-orbitals to interact with reactants, facilitating chemical reactions in industrial processes.</li>
+<li><strong>Lasers:</strong> The principle of stimulated emission, where electrons jump between specific energy levels, is fundamental to how lasers work, used in everything from barcode scanners to surgical tools.</li>
+</ul>
+<hr />
+<h2 id="exam-strategy">🎯 Exam Strategy</h2>
+<div class="callout shadow-sm mb-4 important">
+  <div class="callout-title"><b>High Yield — Comes Up Every Year</b></div>
+  <div class="callout-content"><ul>
+<li>⭐ The order of filling orbitals (1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p...)</li>
+<li>⭐ The rules for electron filling: Aufbau principle, Pauli Exclusion Principle, and Hund's Rule.</li>
+<li>⭐ Deducing electron configurations for neutral atoms and common ions (especially transition metal ions, where 4s electrons are removed before 3d).</li>
+<li>⭐ Understanding the shapes of s and p orbitals and the maximum electron capacity of each subshell type.</li>
+<li>⭐ Anomalous electron configurations for elements like Chromium and Copper (e.g., Cr: [Ar]3d⁵4s¹).</li>
+</ul></div>
+</div>
+
+<div class="callout shadow-sm mb-4 tip">
+  <div class="callout-title"><b>Examiner's Tip</b></div>
+  <div class="callout-content"><p>Pay close attention to whether the question asks for the electron configuration of a neutral atom or an ion. For ions, especially transition metals, remember to remove electrons from the highest principal quantum number (n) first.</p></div>
+</div>
+
+<h3 id="command-word-guidance">🔤 Command Word Guidance</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command Word</th>
+<th style="text-align: left;">What It Means</th>
+<th style="text-align: left;">Applied to This Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Deduce</strong></td>
+<td style="text-align: left;">Reach a conclusion from the information given or from first principles.</td>
+<td style="text-align: left;">Deduce the electron configuration of a titanium ion, Ti²⁺.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Explain</strong></td>
+<td style="text-align: left;">Set out reasons and/or causes.</td>
+<td style="text-align: left;">Explain why the 4s orbital fills before the 3d orbital in neutral atoms.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>State</strong></td>
+<td style="text-align: left;">Give a concise answer with no supporting argument.</td>
+<td style="text-align: left;">State the maximum number of electrons that can occupy a p-subshell.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Describe</strong></td>
+<td style="text-align: left;">Set out characteristics.</td>
+<td style="text-align: left;">Describe the shape of an s-orbital and a p-orbital.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout shadow-sm mb-4 warning">
+  <div class="callout-title"><b>Common Misconceptions</b></div>
+  <div class="callout-content"><ul>
+<li>❌ Assuming that 3d orbitals are always lower in energy than 4s orbitals, especially when forming ions. Remember 4s fills first but electrons are removed from 4s first for transition metal ions.</li>
+<li>❌ Incorrectly applying Hund's rule, by pairing electrons in degenerate orbitals before all orbitals are singly occupied.</li>
+<li>❌ Confusing shells, subshells, and orbitals. They are hierarchical levels of electron location and energy.</li>
+<li>❌ Forgetting the Pauli Exclusion Principle, which states that electrons in the same orbital must have opposite spins.</li>
+<li>❌ Not knowing the maximum number of electrons each subshell type can hold (s=2, p=6, d=10, f=14).</li>
+</ul></div>
+</div>
+
+<div class="callout shadow-sm mb-4 info">
+  <div class="callout-title"><b>Memory Anchor</b></div>
+  <div class="callout-content"><p>Imagine electron shells like floors in a building (n=1, 2, 3...). Subshells are like different apartments (s, p, d) on each floor. Orbitals are like rooms in those apartments, each able to hold 2 people (electrons). Hund's rule is like saying people will try to take their own room first before sharing, and they prefer to face the same way (spin). The elevator (Aufbau) goes to the lowest available floor/room first. But when someone leaves (ionisation), they leave from the top floor first!</p></div>
+</div>
+
+<hr />
+<h2 id="exam-questions-29">❓ Exam Questions (29)</h2>
+<div class="callout shadow-sm mb-4 tip">
+  <div class="callout-title"><b>⏱️ Exam Timing Rule</b></div>
+  <div class="callout-content"><p><strong>~1 minute per mark.</strong> A 3-mark question = ~3 minutes. Use the ⏱️ on each question to practise pacing.</p></div>
+</div>
+
+<h3 id="easy-10-min">🟢 Easy <em>(~10 min)</em></h3>
+<div class="exam-question"><p class="exam-q-header"><strong>Q1.</strong> (1 Mark | MCQ | ⏱️ ~1 min)</p><p class="exam-q-text">Which subshell contains three degenerate p-orbitals?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The p-subshell contains three degenerate p-orbitals.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ p-subshell</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Degenerate means 'of equal energy'. This question checks basic knowledge of subshell types and their orbital count.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Describe the shapes of s and p orbitals and how many orbitals are in each subshell."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q2.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">State the maximum number of electrons that can be held in a single atomic orbital.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> A single atomic orbital can hold a maximum of 2 electrons.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ 2 electrons</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a direct recall question, testing a fundamental principle (Pauli Exclusion Principle). Students often overthink or provide incorrect numbers for shells/subshells instead of an orbital.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain the Pauli Exclusion Principle and its implications for electron spin in orbitals."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q3.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">Write the full electron configuration for a neutral neon atom (Ne).</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> 1s²2s²2p⁶</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ 1s²2s²2p⁶</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Neon is a noble gas, so its full outer shell configuration is very stable. This is a common starting point for electron configuration questions.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"List the full electron configurations for the first 10 elements of the periodic table."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q4.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">What is the shape of an s-orbital?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> An s-orbital has a spherical shape.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Spherical</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Visualising orbital shapes is important for understanding bonding later on. A simple description is sufficient here.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Can you show me 3D representations of s and p orbitals?"</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q5.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">According to the Aufbau principle, which orbital is filled after 3p?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The 4s orbital is filled after the 3p orbital.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ 4s</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This tests the knowledge of the standard filling order, particularly the 4s before 3d rule, which is a common point of confusion.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain the Aufbau principle and draw an energy level diagram showing the order of orbital filling up to 4p."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q6.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">How many electrons can the first electron shell (n=1) hold?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The first electron shell (n=1) can hold a maximum of 2 electrons.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ 2 electrons</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Recall the 2n² rule for maximum electrons per shell. For n=1, 2(1)²=2.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Derive the maximum number of electrons for the first three electron shells using the 2n² rule."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q7.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">State Hund's Rule of Maximum Multiplicity.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> Hund's Rule states that within a subshell, electrons will occupy each orbital singly with parallel spins before any pairing of electrons occurs.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Electrons fill degenerate orbitals singly before pairing up, and with parallel spins.</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Precise recall of definitions is essential for easy marks. Ensure students mention 'degenerate orbitals' and 'parallel spins'.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Provide examples of how Hund's Rule applies to the electron configuration of nitrogen and oxygen."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q8.</strong> (1 Mark | MCQ | ⏱️ ~1 min)</p><p class="exam-q-text">Which of the following describes the shape of a p-orbital?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> Dumbbell shaped.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Dumbbell shaped</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>A simple check of visual recognition or descriptive knowledge of orbital shapes.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"How do the shapes of p-orbitals influence the geometry of molecules?"</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q9.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">What is the principal quantum number (n) for the 3p subshell?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The principal quantum number (n) for the 3p subshell is 3.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ n=3</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>The number preceding the letter in the subshell notation indicates the principal quantum number or shell number.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain the significance of the principal quantum number (n) in determining electron energy levels and shell capacity."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q10.</strong> (1 Mark | Short Answer | ⏱️ ~1 min)</p><p class="exam-q-text">How many orbitals are there in the 2p subshell?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> There are 3 orbitals in the 2p subshell.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ 3 orbitals</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Recall that p subshells always have three orbitals (px, py, pz).</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"What does it mean for orbitals to be 'degenerate', and how does this apply to the p-subshell?"</em></p></div>
+</details>
+
+<h3 id="medium-52-min">🟡 Medium <em>(~52 min)</em></h3>
+<div class="exam-question"><p class="exam-q-header"><strong>Q1.</strong> (3 Marks | Long Answer | ⏱️ ~3 min)</p><p class="exam-q-text">Deduce the full electron configuration for a chlorine atom (Cl) and explain how its position in the periodic table relates to this configuration.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The atomic number of chlorine (Cl) is 17, so it has 17 electrons. Its full electron configuration is 1s²2s²2p⁶3s²3p⁵. This configuration relates to its position in the periodic table as follows: It is in Period 3 because its outermost electrons are in the n=3 shell. It is in Group 17 (the halogens) because it has 7 valence electrons (2 from 3s and 5 from 3p), which means it is one electron short of a full outer shell.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Electron configuration: 1s²2s²2p⁶3s²3p⁵ (1 mark)</li>
+<li>✅ Chlorine is in Group 17 (halogens) because it has 7 valence electrons (2 in 3s, 5 in 3p) (1 mark)</li>
+<li>✅ Chlorine is in Period 3 because its highest occupied principal energy level is n=3 (1 mark)</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This combines electron configuration with understanding periodic trends. Ensure students can link the highest 'n' value to the period and the sum of outer s and p electrons to the group number (for main group elements).</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain how the electron configuration of an element determines its position in the periodic table using examples from Period 3."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q2.</strong> (3 Marks | Short Answer | ⏱️ ~3 min)</p><p class="exam-q-text">Draw an orbital box diagram for a neutral oxygen atom (O). Clearly label all orbitals.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> <code>1s   2s      2p -----  -----  --- --- ---  ↑↓    ↑↓    ↑↓  ↑   ↑</code></p>
+<p><strong>🔢 Working:</strong>
+1. Oxygen (Z=8) has 8 electrons.
+2. Fill 1s: 2 electrons (↑↓).
+3. Fill 2s: 2 electrons (↑↓).
+4. Remaining: 4 electrons for 2p.
+5. Draw three 2p boxes. Fill singly first (↑ ↑ ↑).
+6. Pair the fourth electron in one of the 2p orbitals (↑↓ ↑ ↑).</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Correct 1s orbital with 2 paired electrons (1 mark).</li>
+<li>✅ Correct 2s orbital with 2 paired electrons (1 mark).</li>
+<li>✅ Correct 2p orbitals (3 boxes) with 4 electrons, showing 2 singly occupied and 1 paired according to Hund's rule (1 mark).</li>
+<li>✅ All orbitals clearly labelled (e.g. 1s, 2s, 2px, 2py, 2pz).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Students often make errors in applying Hund's rule, either pairing too early or having incorrect spins. Reinforce the 'empty seat on the bus' analogy.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Generate orbital box diagrams for fluorine, neon, and sodium, and explain the differences."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q3.</strong> (3 Marks | Long Answer | ⏱️ ~3 min)</p><p class="exam-q-text">Explain why the 4s orbital is filled before the 3d orbital in the electron configuration of a neutral potassium atom (K).</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The 4s orbital is filled before the 3d orbital in a neutral potassium atom because, despite having a higher principal quantum number, the 4s orbital actually has a slightly lower energy level than the 3d orbital. According to the Aufbau principle, electrons will always occupy the lowest energy orbitals available first. Hence, the 4s orbital receives electrons before the 3d orbitals.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ The 4s orbital has a slightly lower energy level than the 3d orbital (1 mark).</li>
+<li>✅ Electrons fill orbitals in order of increasing energy (Aufbau principle) (1 mark).</li>
+<li>✅ Therefore, electrons will occupy the 4s orbital before entering the 3d orbitals (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a key concept that often confuses students. Emphasise that 'filling order' is about energy, not just principal quantum number, and that the order can be determined using a simple energy level diagram or mnemonic.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Discuss the exceptions and complexities of the Aufbau principle, particularly concerning the filling of 4s and 3d orbitals."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q4.</strong> (2 Marks | Short Answer | ⏱️ ~2 min)</p><p class="exam-q-text">Deduce the electron configuration for a sulfide ion, S²⁻.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> A neutral sulfur atom (S) has 16 electrons. The sulfide ion (S²⁻) has gained 2 electrons, so it has 18 electrons. The electron configuration is 1s²2s²2p⁶3s²3p⁶.</p>
+<p><strong>🔢 Working:</strong>
+1. Neutral Sulfur (Z=16) has 16 electrons.
+2. S²⁻ means 2 additional electrons, so 16 + 2 = 18 electrons.
+3. Fill orbitals in order: 1s²2s²2p⁶3s²3p⁶.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Correct identification of 18 electrons (1 mark).</li>
+<li>✅ Correct configuration: 1s²2s²2p⁶3s²3p⁶ (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Remind students that negative ions gain electrons, and these fill available orbitals according to the usual rules. Positive ions lose electrons.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Compare the electron configuration of S²⁻ with that of Ar. What is the significance of this similarity?"</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q5.</strong> (3 Marks | Long Answer | ⏱️ ~3 min)</p><p class="exam-q-text">Explain why Chromium (Cr, Z=24) has an anomalous electron configuration of [Ar]3d⁵4s¹ instead of the expected [Ar]3d⁴4s².</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> Chromium exhibits an anomalous electron configuration because atoms achieve greater stability when their d-subshells are either half-filled (d⁵) or completely filled (d¹⁰). The [Ar]3d⁵4s¹ configuration provides a half-filled 3d subshell and a half-filled 4s subshell, which is more stable than the expected [Ar]3d⁴4s² configuration. This enhanced stability arises from factors like increased exchange energy and a more symmetrical electron distribution, resulting in a lower overall energy for the atom.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Half-filled subshells (d⁵ and s¹) are more stable (1 mark).</li>
+<li>✅ This is due to increased exchange energy (or symmetrical distribution) (1 mark).</li>
+<li>✅ This configuration provides a lower overall energy state for the atom (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a common 'trick' question involving transition metal anomalies. Students must know the exceptions and be able to explain the reasoning (stability of half-filled/full subshells).</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain the concept of 'exchange energy' and how it contributes to the stability of half-filled or fully-filled subshells."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q6.</strong> (2 Marks | Short Answer | ⏱️ ~2 min)</p><p class="exam-q-text">How many electrons can the 3d subshell hold in total?</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The 3d subshell contains 5 d-orbitals. Since each orbital can hold a maximum of 2 electrons, the 3d subshell can hold a total of 10 electrons.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Identifies 5 d-orbitals (1 mark).</li>
+<li>✅ States 10 electrons (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Ensure students can connect the number of orbitals in a subshell (s=1, p=3, d=5, f=7) with the total electron capacity (multiply by 2).</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Create a table summarising the number of orbitals and maximum electron capacity for s, p, d, and f subshells."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q7.</strong> (4 Marks | Long Answer | ⏱️ ~4 min)</p><p class="exam-q-text">Using orbital box notation, illustrate the electron configuration of a phosphorus atom (P) and identify the number of unpaired electrons.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> Phosphorus (Z=15) has 15 electrons.<code>1s   2s      2p     3s      3p -----  -----  --- --- ---  -----  --- --- ---  ↑↓    ↑↓    ↑↓  ↑↓  ↑↓    ↑↓    ↑   ↑   ↑</code>Number of unpaired electrons: 3.</p>
+<p><strong>🔢 Working:</strong>
+1. Phosphorus (Z=15) has 15 electrons.
+2. Fill orbitals: 1s²2s²2p⁶3s²3p³.
+3. Draw boxes for 1s, 2s, 2p, 3s, 3p.
+4. Place electrons according to Aufbau and Pauli for 1s, 2s, 2p, 3s.
+5. For 3p³, use Hund's rule: place one electron in each of the three 3p orbitals with parallel spins (↑ ↑ ↑).
+6. Count unpaired electrons: 3 in the 3p subshell.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Correct 1s and 2s orbitals (2 paired electrons each) (1 mark).</li>
+<li>✅ Correct 2p orbitals (3 paired electrons) (1 mark).</li>
+<li>✅ Correct 3s orbital (2 paired electrons) (1 mark).</li>
+<li>✅ Correct 3p orbitals (3 singly occupied, parallel spin) and states 3 unpaired electrons (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a comprehensive test of all three filling rules. Accuracy in drawing and counting is crucial.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain how the number of unpaired electrons in an atom affects its magnetic properties."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q8.</strong> (2 Marks | Long Answer | ⏱️ ~2 min)</p><p class="exam-q-text">Explain the difference between an electron shell and an atomic orbital.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> An electron shell represents a principal energy level, denoted by a principal quantum number (n), which can contain several subshells. An atomic orbital, on the other hand, is a specific region of space within a subshell where there is a high probability of finding an electron, and each orbital can hold a maximum of two electrons with opposite spins.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Electron shell: a principal energy level, containing subshells (1 mark).</li>
+<li>✅ Atomic orbital: a specific region within a subshell where electrons are most likely found, holding a maximum of 2 electrons (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Clarifying the hierarchy (shell &gt; subshell &gt; orbital) is key. Students often use these terms interchangeably.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Using an analogy, describe the relationship between electron shells, subshells, and orbitals."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q9.</strong> (2 Marks | Short Answer | ⏱️ ~2 min)</p><p class="exam-q-text">Deduce the electron configuration for the titanium ion, Ti²⁺.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> A neutral titanium atom (Ti, Z=22) has the electron configuration [Ar]4s²3d². When forming the Ti²⁺ ion, two electrons are removed from the highest principal energy level, which is the 4s orbital. Therefore, the electron configuration for Ti²⁺ is [Ar]3d².</p>
+<p><strong>🔢 Working:</strong>
+1. Neutral Ti (Z=22) electron configuration: 1s²2s²2p⁶3s²3p⁶4s²3d² or [Ar]4s²3d².
+2. To form Ti²⁺, remove 2 electrons.
+3. Remove electrons from the 4s orbital first, as it's the highest principal energy level (n=4).
+4. Resulting configuration: [Ar]3d².</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Correct neutral Ti configuration: [Ar]4s²3d² (1 mark).</li>
+<li>✅ Correct Ti²⁺ configuration (removing 4s electrons first): [Ar]3d² (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This tests the critical rule for transition metal ion formation. Emphasise removing from 4s </em>before<em> 3d, even though 3d might be drawn last in the neutral atom's configuration.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Why are 4s electrons removed before 3d electrons when transition metals form cations?"</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q10.</strong> (2 Marks | Short Answer | ⏱️ ~2 min)</p><p class="exam-q-text">Explain what is meant by 'degenerate orbitals' and give an example.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> Degenerate orbitals are atomic orbitals that possess the same energy level. A common example is the three p-orbitals (2px, 2py, 2pz) within the 2p subshell; all three have identical energies.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Definition: Orbitals that have the same energy level (1 mark).</li>
+<li>✅ Example: The three p-orbitals (px, py, pz) in a given subshell (e.g., 2p) (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This concept is crucial for understanding Hund's rule. Students should be able to define and provide a clear example.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"How does the concept of degenerate orbitals simplify the process of filling electrons according to Hund's Rule?"</em></p></div>
+</details>
+
+<h3 id="hard-126-min">🔴 Hard <em>(~126 min)</em></h3>
+<div class="exam-question"><p class="exam-q-header"><strong>Q1.</strong> (6 Marks | Long Answer | ⏱️ ~6 min)</p><p class="exam-q-text">Critically evaluate the limitations of using the simple Bohr model to describe the electron structure of atoms, contrasting it with the more advanced quantum mechanical model.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The simple Bohr model proposed that electrons orbit the nucleus in fixed, circular paths or 'shells' with specific energy levels. While it successfully explained the hydrogen spectrum, its major limitation is its inability to accurately describe the electron structure of multi-electron atoms. It does not account for the existence of subshells (s, p, d, f) or the specific shapes and orientations of orbitals. Furthermore, it fails to explain phenomena like electron spin or the splitting of spectral lines in magnetic fields. In contrast, the quantum mechanical model, based on Schrödinger's equation, describes electrons as existing in regions of probability called atomic orbitals. This model successfully predicts the complex electron configurations of all elements, incorporates subshells, and explains the distinct shapes of orbitals (spherical s, dumbbell p, etc.). It also naturally includes the concept of electron spin and provides a more accurate and comprehensive understanding of atomic structure and chemical behaviour.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Bohr model: Electrons orbit in fixed, circular paths/shells (1 mark).</li>
+<li>✅ Bohr model: Does not account for subshells or orbitals (1 mark).</li>
+<li>✅ Bohr model: Only works well for hydrogen (single electron systems) (1 mark).</li>
+<li>✅ Quantum mechanical model: Describes electrons in probability regions (orbitals) (1 mark).</li>
+<li>✅ Quantum mechanical model: Accounts for subshells (s, p, d, f) and their shapes/orientations (1 mark).</li>
+<li>✅ Quantum mechanical model: Explains electron spin and multi-electron atom behaviour (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This question requires comparing and contrasting two historical and theoretical models. Emphasise the probabilistic nature of quantum mechanics versus the deterministic orbits of Bohr.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Research the historical development of atomic models from Thomson to Schrödinger. What were the key experiments that led to each major revision?"</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q2.</strong> (6 Marks | Long Answer | ⏱️ ~6 min)</p><p class="exam-q-text">Deduce the full electron configuration and orbital box diagram for a copper atom (Cu, Z=29) and explain the reason for any deviation from the expected Aufbau filling order.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The expected electron configuration for copper (Cu, Z=29) following the Aufbau principle would be [Ar]4s²3d⁹. However, copper exhibits an anomalous configuration of [Ar]4s¹3d¹⁰.<code>4s   3d -----  --- --- --- --- ---  ↑    ↑↓  ↑↓  ↑↓  ↑↓  ↑↓</code>The reason for this deviation is the enhanced stability associated with a completely filled d-subshell (d¹⁰). By promoting one electron from the 4s orbital to the 3d orbital, the atom achieves a 3d¹⁰ configuration and a half-filled 4s¹ configuration. This arrangement, particularly the full d-subshell, provides a significantly lower overall energy state for the atom, making it more stable than the 'expected' configuration.</p>
+<p><strong>🔢 Working:</strong>
+1. Neutral Cu (Z=29) has 29 electrons.
+2. Expected configuration: [Ar]4s²3d⁹.
+3. Recognise Copper as an anomaly due to stability of full/half-full d-orbitals.
+4. Promote one 4s electron to 3d to achieve 3d¹⁰.
+5. Resulting configuration: [Ar]4s¹3d¹⁰.
+6. Draw orbital box for 4s¹ and 3d¹⁰, showing one electron in 4s and all 3d orbitals fully paired.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Expected configuration: [Ar]4s²3d⁹ (1 mark).</li>
+<li>✅ Actual configuration: [Ar]4s¹3d¹⁰ (1 mark).</li>
+<li>✅ Orbital box diagram showing 4s¹ and 3d¹⁰ (1 mark).</li>
+<li>✅ Explanation: Fully filled d-subshell (d¹⁰) is more stable (1 mark).</li>
+<li>✅ Electron promotes from 4s to 3d to achieve this stability (1 mark).</li>
+<li>✅ Results in a lower overall energy state for the atom (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>Copper and Chromium are the two main exceptions to the Aufbau principle students need to know. Emphasise the 'stability' justification.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Compare and contrast the anomalous electron configurations of Chromium and Copper, explaining the underlying reasons for each."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q3.</strong> (5 Marks | Long Answer | ⏱️ ~5 min)</p><p class="exam-q-text">Explain the concept of quantum numbers and how they define the state of an electron in an atom.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> Quantum numbers are a set of values that describe the unique quantum state of an electron in an atom. The principal quantum number (n) describes the main energy shell and size of the orbital (n=1, 2, 3...). The azimuthal or angular momentum quantum number (l) defines the shape of the orbital (l=0 for s, 1 for p, 2 for d), corresponding to the subshell. The magnetic quantum number (ml) specifies the orientation of the orbital in space (e.g., for p-orbitals, ml = -1, 0, +1 for px, py, pz). Finally, the spin quantum number (ms) describes the intrinsic angular momentum of the electron, or its 'spin' (either +½ or -½). Together, these four quantum numbers uniquely specify the state of every electron in an atom, a concept fundamental to the Pauli Exclusion Principle.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Principal quantum number (n): relates to shell/energy level/size (1 mark).</li>
+<li>✅ Azimuthal/angular momentum quantum number (l): relates to subshell/orbital shape (1 mark).</li>
+<li>✅ Magnetic quantum number (ml): relates to orbital orientation in space (1 mark).</li>
+<li>✅ Spin quantum number (ms): relates to electron spin (up or down) (1 mark).</li>
+<li>✅ Together, they uniquely define the state of an electron in an atom (Pauli Exclusion Principle) (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This goes slightly beyond basic A-level but provides excellent stretch. Focus on what each quantum number signifies.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Provide a detailed breakdown of how each of the four quantum numbers (n, l, ml, ms) is assigned for the electrons in a nitrogen atom."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q4.</strong> (4 Marks | Long Answer | ⏱️ ~4 min)</p><p class="exam-q-text">Consider an element with atomic number Z=33. Write its full electron configuration and determine its group and period in the periodic table.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> An element with atomic number Z=33 has 33 electrons. Its full electron configuration is 1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p³.The outermost principal energy level is n=4, which means the element is in <strong>Period 4</strong>.The valence electrons are in the 4s and 4p subshells (4s²4p³), totaling 2 + 3 = 5 valence electrons. This places the element in <strong>Group 15</strong> of the periodic table.</p>
+<p><strong>🔢 Working:</strong>
+1. Count electrons: Z=33 means 33 electrons.
+2. Fill orbitals in order: 1s² (2), 2s² (4), 2p⁶ (10), 3s² (12), 3p⁶ (18), 4s² (20), 3d¹⁰ (30), 4p³ (33).
+3. Identify highest 'n' value for Period: 4.
+4. Identify total valence electrons (outer s and p) for Group: 2 (from 4s) + 3 (from 4p) = 5. Add 10 for d-block elements to get main group number: 5 + 10 = 15.
+5. Alternatively for main group: 5 valence electrons means Group 15.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Full electron configuration: 1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p³ (1 mark).</li>
+<li>✅ Identifies outermost shell as n=4 (1 mark).</li>
+<li>✅ Deduces Period 4 (1 mark).</li>
+<li>✅ Deduces Group 15 (5 valence electrons: 4s²4p³) (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a good test of systematic application of filling rules and linking to periodic table positions, including the d-block elements. Students sometimes forget to count d-block electrons when determining group number for main group elements, or miscount the valence electrons.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explore the electron configurations of elements in Group 15 (Nitrogen group) and explain how they influence the group's chemical properties."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q5.</strong> (5 Marks | Long Answer | ⏱️ ~5 min)</p><p class="exam-q-text">An unknown element has the electron configuration [Ar]3d⁷4s². Predict its chemical properties, including its typical oxidation states and whether it is likely to be a metal or non-metal. Justify your answer.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The electron configuration [Ar]3d⁷4s² indicates an element that is a transition metal. This is because it has a partially filled d-subshell in its highest energy level and its outermost electrons are in the 4s orbital after the 3d subshell has started filling.Therefore, it is highly likely to be a <strong>metal</strong>. It would typically exhibit characteristic metallic properties such as being a good conductor of heat and electricity, malleable, and ductile.Transition metals are known for their ability to form <strong>multiple oxidation states</strong>. The most common oxidation state would be <strong>+2</strong>, formed by losing the two electrons from the 4s orbital. Higher oxidation states, such as <strong>+3</strong> (losing the two 4s and one 3d electron), are also likely due to the involvement of the 3d electrons in bonding, a characteristic feature of transition metals.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Identifies element as a transition metal (d-block element) (1 mark).</li>
+<li>✅ Predicts it will be a metal (good conductor, malleable, ductile) (1 mark).</li>
+<li>✅ Predicts multiple oxidation states, typically +2 (losing 4s electrons) (1 mark).</li>
+<li>✅ Also suggests possibility of higher oxidation states (e.g. +3, losing 4s and one 3d electron) (1 mark).</li>
+<li>✅ Justification: Partially filled d-orbitals allow for variable oxidation states and metallic bonding (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This question requires synthesis of knowledge: using electron configuration to infer position, then using position to predict properties. It highlights the importance of electron structure for reactivity and periodic trends.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Discuss how the electron configurations of transition metals lead to their unique chemical properties, such as forming coloured ions and acting as catalysts."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q6.</strong> (4 Marks | Long Answer | ⏱️ ~4 min)</p><p class="exam-q-text">Explain why the first ionisation energy of oxygen is lower than that of nitrogen, even though oxygen has a higher nuclear charge.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The electron configuration of nitrogen (N) is 1s²2s²2p³, meaning its 2p subshell is half-filled with three unpaired electrons, which confers extra stability according to Hund's Rule. The electron configuration of oxygen (O) is 1s²2s²2p⁴. In oxygen, one of the 2p orbitals contains a pair of electrons. The mutual repulsion between these paired electrons in the same orbital makes it slightly easier to remove one of them from oxygen compared to removing an electron from a singly occupied orbital in nitrogen. This electron-electron repulsion outweighs the effect of oxygen's increased nuclear charge, resulting in a lower first ionisation energy for oxygen than nitrogen.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Nitrogen: 1s²2s²2p³ (3 unpaired p electrons, half-filled p subshell) (1 mark).</li>
+<li>✅ Oxygen: 1s²2s²2p⁴ (1 paired and 2 unpaired p electrons) (1 mark).</li>
+<li>✅ In oxygen, the electron being removed is from a paired 2p orbital (1 mark).</li>
+<li>✅ The repulsion between these paired electrons makes it easier to remove one, overcoming the increased nuclear charge (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a classic question that requires detailed knowledge of electron configurations and the concept of electron-electron repulsion affecting stability and ionisation energy. Students must explicitly mention the pairing in oxygen's 2p subshell.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain how electron pairing in orbitals influences ionisation energy trends across a period, using Period 2 as an example."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q7.</strong> (4 Marks | Long Answer | ⏱️ ~4 min)</p><p class="exam-q-text">An element forms a cation X³⁺ with the electron configuration [Ar]3d⁵. Deduce the atomic number of element X and its full electron configuration in its neutral state.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The ion X³⁺ has the electron configuration [Ar]3d⁵. The [Ar] core represents 18 electrons. Adding the 5 electrons from the 3d subshell gives X³⁺ a total of 18 + 5 = 23 electrons.Since X³⁺ is formed by losing 3 electrons from a neutral X atom, the neutral X atom must have 23 + 3 = 26 electrons. To find the neutral electron configuration, we add these 3 electrons back. We must remember that for transition metals, electrons are added to (or removed from) the 4s orbital before the 3d orbital. So, the first two electrons would go into the 4s orbital, and the third into the 3d orbital.Therefore, the neutral electron configuration for element X is <strong>[Ar]4s²3d⁶</strong>.The atomic number (Z) of element X is <strong>26</strong> (18 from [Ar] + 2 from 4s + 6 from 3d).</p>
+<p><strong>🔢 Working:</strong>
+1. X³⁺ has [Ar]3d⁵ electrons = 18 (Ar) + 5 (3d) = 23 electrons.
+2. Neutral X has 23 + 3 = 26 electrons.
+3. When forming an ion, 4s electrons are removed first. So when adding electrons back to form the neutral atom, the 4s orbital should be refilled first before 3d.
+4. Add 2 electrons to 4s: [Ar]4s²3d⁵.
+5. Add the remaining 1 electron to 3d: [Ar]4s²3d⁶.
+6. Atomic number = 18 + 2 + 6 = 26.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ X³⁺ has [Ar]3d⁵ configuration (1 mark).</li>
+<li>✅ This means the ion has 18 (from Ar) + 5 (from 3d) = 23 electrons (1 mark).</li>
+<li>✅ To become neutral X, add 3 electrons back. These would first go into 4s, then 3d if more needed (1 mark).</li>
+<li>✅ Neutral X configuration: [Ar]4s²3d⁶. (Atomic number Z = 18 + 2 + 6 = 26) (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a challenging reverse-engineering problem. Students must apply the rule for transition metal ion formation in reverse, remembering that 4s electrons are the first to be lost/gained in this context.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Given the electron configuration of a transition metal ion, how can you deduce the identity of the neutral atom? Provide another example with an element and its +2 ion."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q8.</strong> (4 Marks | Long Answer | ⏱️ ~4 min)</p><p class="exam-q-text">Describe how the number of electrons that can occupy the first four electron shells (n=1 to n=4) can be determined and calculate the maximum capacity for each.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> The maximum number of electrons that can occupy a principal electron shell (n) can be determined using the formula 2n².Applying this formula for the first four shells:For n=1: Maximum electrons = 2 × (1)² = 2 electrons.For n=2: Maximum electrons = 2 × (2)² = 8 electrons.For n=3: Maximum electrons = 2 × (3)² = 18 electrons.For n=4: Maximum electrons = 2 × (4)² = 32 electrons.</p>
+<p><strong>🔢 Working:</strong>
+1. State the formula: Max electrons = 2n².
+2. Substitute n=1, calculate 2(1)²=2.
+3. Substitute n=2, calculate 2(2)²=8.
+4. Substitute n=3, calculate 2(3)²=18.
+5. Substitute n=4, calculate 2(4)²=32.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ States the formula 2n² (1 mark).</li>
+<li>✅ Calculates n=1: 2 electrons (1 mark).</li>
+<li>✅ Calculates n=2: 8 electrons (1 mark).</li>
+<li>✅ Calculates n=3: 18 electrons (1 mark).</li>
+<li>✅ Calculates n=4: 32 electrons (1 mark). (Max 4 marks awarded here, so 4 of the 5 points needed for full marks)</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a fundamental calculation, but students can easily make arithmetic errors. Ensure they understand the derivation from the number of subshells and orbitals.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Explain the relationship between the 2n² rule and the existence of s, p, d, and f subshells within each principal energy level."</em></p></div>
+</details>
+
+<div class="exam-question"><p class="exam-q-header"><strong>Q9.</strong> (4 Marks | Long Answer | ⏱️ ~4 min)</p><p class="exam-q-text">Describe the relative energies of the 3d and 4s orbitals in a neutral atom and in a transition metal ion.</p></div>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>✅ Answer & Mark Scheme</b></summary>
+  <div class="callout-content"><p><strong>✏️ Answer:</strong> In a neutral atom, the 4s orbital has a slightly lower energy than the 3d orbital. This is why, according to the Aufbau principle, electrons fill the 4s orbital before the 3d orbitals (e.g., potassium and calcium). However, when a transition metal forms a positive ion, the relative energies of the 3d and 4s orbitals switch. The 3d orbitals become lower in energy than the 4s orbital. Consequently, the electrons that are removed first when forming an ion are those from the 4s orbital, as they are now at a higher energy level and are also located further from the nucleus, experiencing less nuclear attraction.</p>
+<hr />
+<p><strong>📋 Mark Scheme:</strong></p>
+<ul>
+<li>✅ Neutral atom: 4s is lower in energy than 3d (1 mark).</li>
+<li>✅ So 4s fills first according to Aufbau (1 mark).</li>
+<li>✅ Transition metal ion: 3d is lower in energy than 4s (1 mark).</li>
+<li>✅ So 4s electrons are removed first when forming ions, as they are now higher in energy and further from the nucleus (1 mark).</li>
+</ul>
+<hr />
+<p>👩‍🏫 <strong>Teacher's Note:</strong> <em>This is a challenging concept that differentiates higher-level understanding. Students often struggle with the inversion of energy levels upon ionisation. Focus on the distinction between filling order and removal order.</em></p>
+<p>🤖 <strong>Go Deeper (AI Prompt):</strong> <em>"Research the 'penetration effect' and 'shielding effect' and explain how these concepts contribute to the relative energies of 4s and 3d orbitals in neutral atoms and ions."</em></p></div>
+</details>
+
+<hr />
+<h2 id="quick-quiz-mcq">🧩 Quick Quiz (MCQ)</h2>
+<p><strong>1.</strong> What is the maximum number of electrons that can be held in the third electron shell (n=3)?
+  A) A) 2
+  B) B) 8
+  C) C) 18
+  D) D) 32</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>C)</strong> C) 18
+The maximum number of electrons in a shell is given by the formula 2n², where n is the shell number. For the third shell (n=3), 2 × 3² = 2 × 9 = 18 electrons.</p></div>
+</details>
+
+<p><strong>2.</strong> Which statement best describes an atomic orbital?
+  A) A) A fixed path in which an electron moves around the nucleus.
+  B) B) A region of space where there is a high probability of finding up to two electrons with opposite spins.
+  C) C) A spherical region of space that can hold any number of electrons.
+  D) D) The specific energy level that an electron occupies.</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>B)</strong> B) A region of space where there is a high probability of finding up to two electrons with opposite spins.
+An atomic orbital describes a region of space where an electron is most likely to be found, and each orbital can hold a maximum of two electrons, provided they have opposite spins.</p></div>
+</details>
+
+<p><strong>3.</strong> Which of the following correctly describes the shape of a p-orbital?
+  A) A) Spherical
+  B) B) Dumbbell
+  C) C) Tetrahedral
+  D) D) Planar</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>B)</strong> B) Dumbbell
+S-orbitals are spherical in shape, while p-orbitals are dumbbell-shaped.</p></div>
+</details>
+
+<p><strong>4.</strong> In which order are the subshells filled according to increasing energy?
+  A) A) 3p, 3d, 4s
+  B) B) 3p, 4s, 3d
+  C) C) 4s, 3p, 3d
+  D) D) 3d, 4s, 3p</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>B)</strong> B) 3p, 4s, 3d
+According to the Aufbau principle, electrons fill subshells in order of increasing energy. The 3p subshell is filled before the 4s, and the 4s is filled before the 3d.</p></div>
+</details>
+
+<p><strong>5.</strong> An element has the electron configuration 1s²2s²2p⁴. How many unpaired electrons does an atom of this element have in its ground state?
+  A) A) 0
+  B) B) 1
+  C) C) 2
+  D) D) 4</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>C)</strong> C) 2
+The 2p subshell consists of three orbitals. With 4 electrons, following Hund's rule (occupy singly before pairing), the configuration would be (↑)(↑)(↑) for the first three electrons, and the fourth electron would pair up with one of the single electrons, leaving two unpaired electrons.</p></div>
+</details>
+
+<p><strong>6.</strong> What is the correct electron configuration for a neutral sulfur atom (S, Z=16)?
+  A) A) 1s²2s²2p⁶3s²3p⁴
+  B) B) 1s²2s²2p⁶3s²3p⁶
+  C) C) 1s²2s²2p⁸3s²3p²
+  D) D) 1s²2s²2p⁶3s¹3p⁵</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>A)</strong> A) 1s²2s²2p⁶3s²3p⁴
+Sulfur has 16 electrons. Filling orbitals in order: 1s² (2 electrons), 2s² (2), 2p⁶ (6), 3s² (2), 3p⁴ (4). Total = 2+2+6+2+4 = 16 electrons.</p></div>
+</details>
+
+<p><strong>7.</strong> What is the electron configuration of the oxide ion, O²⁻ (Z=8 for Oxygen)?
+  A) A) 1s²2s²2p⁴
+  B) B) 1s²2s²2p⁶
+  C) C) 1s²2s²2p²
+  D) D) 1s²2s²2p⁵</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>B)</strong> B) 1s²2s²2p⁶
+A neutral oxygen atom has 8 electrons (1s²2s²2p⁴). The O²⁻ ion gains two electrons, giving it a total of 10 electrons, which fills the 2p subshell to 2p⁶.</p></div>
+</details>
+
+<p><strong>8.</strong> Which of the following represents the electron configuration of a magnesium ion, Mg²⁺ (Z=12 for Magnesium)?
+  A) A) 1s²2s²2p⁶3s²
+  B) B) 1s²2s²2p⁶3s¹
+  C) C) 1s²2s²2p⁴
+  D) D) 1s²2s²2p⁶</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>D)</strong> D) 1s²2s²2p⁶
+A neutral magnesium atom has 12 electrons (1s²2s²2p⁶3s²). To form a Mg²⁺ ion, it loses two electrons from its outermost shell (the 3s orbital), resulting in 10 electrons with the configuration 1s²2s²2p⁶.</p></div>
+</details>
+
+<p><strong>9.</strong> How many unpaired electrons are present in a neutral iron atom (Fe, Z=26) in its ground state?
+  A) A) 0
+  B) B) 2
+  C) C) 4
+  D) D) 6</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>C)</strong> C) 4
+The electron configuration for Fe is [Ar]3d⁶4s². The 4s orbital is full. For the 3d subshell with 6 electrons, following Hund's rule, electrons fill each of the five 3d orbitals singly before any pairing occurs. So, 5 electrons are placed singly (↑ ↑ ↑ ↑ ↑), and the 6th electron pairs up in one of the orbitals (↑↓ ↑ ↑ ↑ ↑), leaving 4 unpaired electrons.</p></div>
+</details>
+
+<p><strong>10.</strong> An element has the electron configuration 1s²2s²2p⁶3s²3p¹. Which element is this?
+  A) A) Silicon (Si, Z=14)
+  B) B) Phosphorus (P, Z=15)
+  C) C) Aluminium (Al, Z=13)
+  D) D) Boron (B, Z=5)</p>
+<details class="callout shadow-sm mb-4 success">
+  <summary class="callout-title"><b>Answer</b></summary>
+  <div class="callout-content"><p><strong>C)</strong> C) Aluminium (Al, Z=13)
+To identify the element, sum the total number of electrons: 2 + 2 + 6 + 2 + 1 = 13 electrons. For a neutral atom, the number of electrons equals the atomic number (Z). The element with Z=13 is Aluminium (Al).</p></div>
+</details>
+
+<hr />
+<h2 id="flashcards-15">🗂️ Flashcards (15)</h2>
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>1. What is an electron shell?</b></summary>
+  <div class="callout-content"><p>An electron shell is a principal energy level around the nucleus where electrons are found. Each shell can hold a specific maximum number of electrons.</p>
+<p><em>Tags: electron shells, definition, basic</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>2. What is an atomic orbital?</b></summary>
+  <div class="callout-content"><p>An atomic orbital is a region within an atom that describes the probability of finding an electron. It can hold a maximum of two electrons with opposite spins.</p>
+<p><em>Tags: atomic orbitals, definition, basic</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>3. How many electrons can fill the first, second, third, and fourth electron shells, respectively?</b></summary>
+  <div class="callout-content"><p>The first shell can hold 2 electrons, the second can hold 8, the third can hold 18, and the fourth can hold 32 electrons.</p>
+<p><em>Tags: electron shells, capacity, process</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>4. Describe the shape of an s-orbital.</b></summary>
+  <div class="callout-content"><p>An s-orbital is spherical in shape. There is one s-orbital in each energy level.</p>
+<p><em>Tags: atomic orbitals, s-orbital, shape, definition</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>5. Describe the shape of a p-orbital.</b></summary>
+  <div class="callout-content"><p>A p-orbital is dumbbell-shaped, consisting of two lobes on opposite sides of the nucleus. There are three p-orbitals (px, py, pz) in a given energy level, oriented along perpendicular axes.</p>
+<p><em>Tags: atomic orbitals, p-orbital, shape, definition</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>6. State the order of filling for the first three shells and the 4s and 4p orbitals according to increasing energy.</b></summary>
+  <div class="callout-content"><p>The order of filling is 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p. This sequence follows the Aufbau principle.</p>
+<p><em>Tags: orbital filling, energy levels, process</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>7. Why do electrons in an orbital have opposite spins?</b></summary>
+  <div class="callout-content"><p>This is due to the Pauli Exclusion Principle, which states that no two electrons in the same atom can have the same set of four quantum numbers. Having opposite spins allows two electrons to occupy the same orbital without violating this principle.</p>
+<p><em>Tags: atomic orbitals, electron spin, Pauli Exclusion Principle, application</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>8. Explain Hund's Rule of Maximum Multiplicity regarding orbital filling.</b></summary>
+  <div class="callout-content"><p>Hund's Rule states that electrons will occupy degenerate orbitals (orbitals of the same energy) singly before pairing up in any one orbital. Each singly occupied orbital will have parallel spins.</p>
+<p><em>Tags: orbital filling, Hund's Rule, process</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>9. Write the full electron configuration for an atom of Oxygen (Z=8).</b></summary>
+  <div class="callout-content"><p>The electron configuration for Oxygen (Z=8) is 1s²2s²2p⁴.</p>
+<p><em>Tags: electron configuration, atoms, application, Oxygen</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>10. Write the full electron configuration for an atom of Sodium (Z=11).</b></summary>
+  <div class="callout-content"><p>The electron configuration for Sodium (Z=11) is 1s²2s²2p⁶3s¹.</p>
+<p><em>Tags: electron configuration, atoms, application, Sodium</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>11. Write the full electron configuration for the ion O²⁻.</b></summary>
+  <div class="callout-content"><p>Oxygen (Z=8) has 8 electrons. The O²⁻ ion has gained two electrons, totaling 10 electrons. Its electron configuration is 1s²2s²2p⁶.</p>
+<p><em>Tags: electron configuration, ions, application, Oxygen</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>12. How does the filling of the 3d orbitals relate to the 4s orbital in terms of energy?</b></summary>
+  <div class="callout-content"><p>The 4s orbital is filled before the 3d orbitals because it has a slightly lower energy level. After the 4s is filled, the 3d orbitals are then filled.</p>
+<p><em>Tags: orbital filling, energy levels, 3d, 4s, compare</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>13. What is electron configuration?</b></summary>
+  <div class="callout-content"><p>Electron configuration is the distribution of electrons of an atom or molecule in atomic or molecular orbitals. It describes where electrons are most likely to be found.</p>
+<p><em>Tags: electron configuration, definition, basic</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>14. Describe the general steps to determine the electron configuration of an atom.</b></summary>
+  <div class="callout-content"><ol>
+<li>Determine the number of electrons from the atomic number. 2. Fill orbitals in order of increasing energy (Aufbau principle). 3. Fill degenerate orbitals singly before pairing (Hund's Rule). 4. Ensure each orbital holds a maximum of two electrons with opposite spins (Pauli exclusion principle).</li>
+</ol>
+<p><em>Tags: electron configuration, process, Aufbau, Hund's Rule, Pauli exclusion</em></p></div>
+</details>
+
+<details class="callout shadow-sm mb-4 question">
+  <summary class="callout-title"><b>15. Write the full electron configuration for the ion K⁺ (Potassium, Z=19).</b></summary>
+  <div class="callout-content"><p>Potassium (Z=19) has 19 electrons. The K⁺ ion has lost one electron, totaling 18 electrons. Its electron configuration is 1s²2s²2p⁶3s²3p⁶.</p>
+<p><em>Tags: electron configuration, ions, application, Potassium</em></p></div>
+</details>
+
+<hr />
+<h2 id="mindmap">🧠 Mindmap</h2>
+<pre class="mermaid">graph LR
+    A["🧠 Mindmap preview not available"]
+    A --> B["Open in Obsidian for full mindmap"]
+    style A fill:#1e3a5f,stroke:#58a6ff,color:#fff
+    style B fill:#161b22,stroke:#30363d,color:#e6edf3</pre>
+<hr />
+<h2 id="cram-sheet-3-3-1">⚡ Cram Sheet (3-3-1)</h2>
+<div class="callout shadow-sm mb-4 abstract">
+  <div class="callout-title"><b>Key Facts</b></div>
+  <div class="callout-content"><ul>
+<li>📌 The first four electron shells can hold a maximum of 2, 8, 18, and 32 electrons respectively.</li>
+<li>📌 An atomic orbital is a region holding up to two electrons with opposite spins, where s-orbitals are spherical and p-orbitals are dumbbell-shaped.</li>
+<li>📌 Orbitals fill in order of increasing energy (e.g., 1s, 2s, 2p, 3s, 3p, 4s, 3d), with single electrons occupying degenerate orbitals before pairing.</li>
+</ul></div>
+</div>
+
+<div class="callout shadow-sm mb-4 danger">
+  <div class="callout-title"><b>Red Flags</b></div>
+  <div class="callout-content"><ul>
+<li>🚩 Always remember that the 4s orbital fills before the 3d orbital for neutral atoms, but electrons are removed from 4s first when forming positive ions.</li>
+<li>🚩 For ions, correctly adjust the total electron count before filling and ensure electrons are removed from the highest energy shell first for cations.</li>
+<li>🚩 Do not confuse shells with sub-shells (orbitals); shells are main energy levels, while sub-shells are within these levels and contain specific orbitals.</li>
+</ul></div>
+</div>
+
+<div class="callout shadow-sm mb-4 success">
+  <div class="callout-title"><b>Main Takeaway</b></div>
+  <div class="callout-content"><p>Mastering electron configuration is crucial for predicting an element's reactivity, bonding behaviour, and its position within the periodic table.</p></div>
+</div>
+
+<hr />
+<h2 id="stretch-challenge">💭 Stretch &amp; Challenge</h2>
+<ul>
+<li>🤔 If the Pauli Exclusion Principle were violated, what fundamental properties of matter might change, and how would this affect the periodic table?</li>
+<li>🤔 How does the concept of electron shielding relate to the observed order of orbital filling and the relative energies of subshells?</li>
+<li>🤔 Consider elements beyond Z=36. How would you predict their electron configurations, and what challenges might arise due to increasing orbital overlap and relativistic effects?</li>
+<li>🤔 If we could 'see' an electron, how would its observed location compare to the 'shape' of an orbital, and what does this imply about the nature of probability in quantum mechanics?</li>
+<li>🤔 How does the anomalous electron configuration of chromium or copper provide evidence for the stability associated with half-filled or fully-filled subshells?</li>
+</ul>
+<hr />
+<h2 id="self-assessment-checklist">✅ Self-Assessment Checklist</h2>
+<ul>
+<li>[ ] I can state the maximum number of electrons for the first four electron shells.</li>
+<li>[ ] I can draw and describe the shapes of s- and p-orbitals.</li>
+<li>[ ] I can write the full electron configuration for any atom or ion up to Z=36, applying Aufbau, Pauli, and Hund's rules.</li>
+<li>[ ] I can draw orbital box diagrams, correctly showing electron spins and pairing.</li>
+<li>[ ] I can explain why 4s fills before 3d in neutral atoms, but 4s electrons are removed first for transition metal ions.</li>
+<li>[ ] I can identify anomalous electron configurations (Cr, Cu) and explain their stability.</li>
+</ul>
+<div class="callout shadow-sm mb-4 tip">
+  <div class="callout-title"><b>AI Tutor Prompts</b></div>
+  <div class="callout-content"><p>Copy these into ChatGPT / Gemini for targeted feedback:
+- <em>"Given my current understanding of electron configurations, what are some common tricky elements or ions I should practice writing configurations for?"</em>
+- <em>"Can you provide me with a series of electron configurations for me to convert into orbital box diagrams, and then critique my answers on Hund's rule application?"</em>
+- <em>"Explain the subtle energetic differences that cause the 4s/3d orbital swap for transition metal ions in more detail."</em></p></div>
+</div>
+
+<hr />
+<h2 id="related-topics">🔗 Related Topics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Topic</th>
+<th style="text-align: left;">Relation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="wikilink broken">Atomic structure (protons, neutrons, electrons, atomic number, mass number)</span></td>
+<td style="text-align: left;">Prerequisites</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="wikilink broken">Basic understanding of the periodic table (groups, periods, block elements)</span></td>
+<td style="text-align: left;">Prerequisites</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="wikilink broken">Knowledge of isotopes</span></td>
+<td style="text-align: left;">Prerequisites</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="wikilink broken">Chemical bonding (ionic, covalent, metallic)</span></td>
+<td style="text-align: left;">Next steps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="wikilink broken">Periodicity (trends across periods and down groups)</span></td>
+<td style="text-align: left;">Next steps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="wikilink broken">Spectroscopy and analytical techniques</span></td>
+<td style="text-align: left;">Next steps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="wikilink broken">Transition metals (properties and reactions)</span></td>
+<td style="text-align: left;">Next steps</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deep-dive-extension">🔍 Deep Dive (Extension)</h2>
+<h3 id="history">📜 History</h3>
+<p>The concept of electron structure evolved significantly. Early models like J.J. Thomson's 'plum pudding' and Rutherford's nuclear model laid the groundwork. Niels Bohr's model (1913) introduced quantised energy levels (shells) and explained the hydrogen spectrum, but failed for multi-electron atoms. Louis de Broglie (wave-particle duality), Werner Heisenberg (uncertainty principle), and Erwin Schrödinger (wave equation) developed the quantum mechanical model in the 1920s, replacing fixed orbits with probability distributions (orbitals). Wolfgang Pauli introduced the exclusion principle, and Friedrich Hund formulated his rule, solidifying our modern understanding.</p>
+<h3 id="ethics">⚖️ Ethics</h3>
+<p>While electron structure itself doesn't carry direct ethical implications, the technologies derived from this fundamental understanding do. For instance, the development of advanced materials (semiconductors, superconductors) relies heavily on controlling electron behaviour, leading to discussions on equitable access to technology and responsible resource extraction. Furthermore, in areas like quantum computing, a deep understanding of electron spin and quantum states is crucial, raising ethical questions about powerful new computational capabilities and their societal impact.</p>
+<h3 id="advanced-theory">🚀 Advanced Theory</h3>
+<p>Beyond the basic Aufbau, Pauli, and Hund's rules, the full quantum mechanical treatment uses four quantum numbers: principal (n), azimuthal (l), magnetic (ml), and spin (ms), to uniquely define each electron's state. Relativistic effects become significant for heavier elements, affecting orbital energies and shapes, particularly for core electrons. For transition metals, crystal field theory and ligand field theory explain how the d-orbitals split into different energy levels when surrounded by ligands, which accounts for their characteristic colours and magnetic properties, an advanced concept building directly on electron configuration.</p>
+<hr />
+<h2 id="further-reading-references">📚 Further Reading &amp; References</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Resource</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">OCR A Level Chemistry A Student Book 1</td>
+<td style="text-align: left;">textbook</td>
+<td style="text-align: left;">Chapter 2: Electrons, bonding and structure, pages 26-35</td>
+</tr>
+<tr>
+<td style="text-align: left;">BBC Bitesize AQA A-Level Chemistry</td>
+<td style="text-align: left;">website</td>
+<td style="text-align: left;">www.bbc.co.uk/bitesize/guides/z38kmsg/revision/1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chemguide: Atomic Orbitals and Electron Configurations</td>
+<td style="text-align: left;">website</td>
+<td style="text-align: left;">www.chemguide.co.uk/atommenu.html#top</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khan Academy: Electron Configuration</td>
+<td style="text-align: left;">video</td>
+<td style="text-align: left;">Search 'Khan Academy Electron Configuration' on YouTube for comprehensive tutorials.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCR Chemistry A H432 Specification</td>
+<td style="text-align: left;">specification</td>
+<td style="text-align: left;">Section 2.2.1 Electron structure</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="science-lab-formulae">🔬 Science: Lab &amp; Formulae</h2>
+<h3 id="key-formulae">📐 Key Formulae</h3>
+<ul>
+<li>$$Maximum electrons in a shell (n) = 2n^{2}$$</li>
+</ul></article>
+
+      <!-- Related Notes -->
+      
+
+      <!-- Prev / Next -->
+      <div class="prev-next">
+        
+        <a href="../../chemistry-aqa-gcse/aqa-8462-4.4.3.2---electrolysis-of-molten-ionic-compounds/" class="prev">
+          <div class="label">← Previous</div>
+          <div class="link-title">Electrolysis of Molten Ionic Compounds</div>
+        </a>
+         
+        <a href="../../chemistry-ocr-gcse/ocr-h432-2.2.2.i-j---electronegativity-and-bond-polarity/" class="next">
+          <div class="label">Next →</div>
+          <div class="link-title">Electronegativity and Bond Polarity</div>
+        </a>
+        
+      </div>
+    </main>
+
+    <!-- On-page TOC -->
+    
+    <aside class="page-toc" aria-label="Table of contents">
+      <h4>On this page</h4>
+      <ul>
+        
+        <li class="toc-h2">
+          <a href="#conceptual-understanding">🧠 Conceptual Understanding</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#core-theory">📌 Core Theory</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#detailed-explanation">🔬 Detailed Explanation</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#key-definitions">📖 Key Definitions</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#glossary">📚 Glossary</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#worked-examples">📝 Worked Examples</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#1-writing-the-electron-configuration-of-an-atom">1. Writing the Electron Configuration of an Atom</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#2-writing-the-electron-configuration-of-an-ion">2. Writing the Electron Configuration of an Ion</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#3-applying-hunds-rule-and-pauli-principle-with-an-orbital-box-diagram">3. Applying Hund&#39;s Rule and Pauli Principle with an Orbital Box Diagram</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#required-diagrams">🎨 Required Diagrams</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#real-world-applications">🌍 Real World Applications</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#exam-strategy">🎯 Exam Strategy</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#command-word-guidance">🔤 Command Word Guidance</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#exam-questions-29">❓ Exam Questions (29)</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#easy-10-min">🟢 Easy (~10 min)</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#medium-52-min">🟡 Medium (~52 min)</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#hard-126-min">🔴 Hard (~126 min)</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#quick-quiz-mcq">🧩 Quick Quiz (MCQ)</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#flashcards-15">🗂️ Flashcards (15)</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#mindmap">🧠 Mindmap</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#cram-sheet-3-3-1">⚡ Cram Sheet (3-3-1)</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#stretch-challenge">💭 Stretch &amp;amp; Challenge</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#self-assessment-checklist">✅ Self-Assessment Checklist</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#related-topics">🔗 Related Topics</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#deep-dive-extension">🔍 Deep Dive (Extension)</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#history">📜 History</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#ethics">⚖️ Ethics</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#advanced-theory">🚀 Advanced Theory</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#further-reading-references">📚 Further Reading &amp;amp; References</a>
+        </li>
+        
+        <li class="toc-h2">
+          <a href="#science-lab-formulae">🔬 Science: Lab &amp;amp; Formulae</a>
+        </li>
+        
+        <li class="toc-h3">
+          <a href="#key-formulae">📐 Key Formulae</a>
+        </li>
+        
+      </ul>
+    </aside>
+    
+
+    <script src="../../assets/script.js"></script>
+    <!-- KaTeX auto-render -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+      crossorigin="anonymous"
+      onload="
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+          ],
+          throwOnError: false,
+        })
+      "
+    ></script>
+  </body>
+</html>
